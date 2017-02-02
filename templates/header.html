@@ -15,31 +15,62 @@
 
 </head>
 
-<header>
-
-    <center>
-
-        <a href="/">
-            <img src="{{ url_for('static', filename='img/logo2.jpg')}}">
-        </a>
-        <div class="navbar">
-            <ul>
-                <li><a href="">News</a></li>
-                <li><a href="">Opinions</a></li>
-                <li><a href="">Humor</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">A&E</a></li>
-                <li><a href="">Sports</a></li>
-            </ul>
-        </div>
-
-    </center>
-
-</header>
-
 <body>
 
-    {% block body %}
-    {% endblock %}
+    <header>
+
+        <center>
+
+            <a href="/">
+                <img src="{{ url_for('static', filename='img/logo2.jpg')}}">
+            </a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Opinions</a></li>
+                    <li><a href="">Humor</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">A&E</a></li>
+                    <li><a href="">Sports</a></li>
+                </ul>
+            </div>
+
+        </center>
+
+    </header>
+
+    <div class="container">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <footer class="footer">
+        <nav class="footer-sub-menu">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email</li>
+                <li>FAQs</li>
+                <li>Advertise</li>
+            </ul>
+        </nav>
+        <nav class="footer-sub-menu">
+            <h3>Social</h3>
+            <ul>
+                <li>Social</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </nav>
+        <nav class="footer-sub-menu">
+            <h3>More</h3>
+            <ul>
+                <li>Policies</li>
+                <li>Terms</li>
+                <li>Charter</li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
 
 </html>

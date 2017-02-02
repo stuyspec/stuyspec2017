@@ -1,3 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -20,4 +36,36 @@
 
 .navbar ul li a:hover {
     color: #888;
+}
+
+.container {
+    flex: 1;
+
+}
+
+.footer {
+    display: block;
+    background: #fff;
+    border-top: 1px solid #d5d5d5;
+}
+
+.footer-sub-menu {
+    display: inline-block;
+    width: 33.1%;
+}
+
+.footer-sub-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sub-menu h3 {
+    color: #000;
+}
+
+.footer-sub-menu ul li {
+    color: #999;
+    padding: 10px;
+    text-transform: uppercase;
 }
