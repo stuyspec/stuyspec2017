@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Home</title>
+
+    <!-- http://www.favicon-generator.org/ for app icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+
+<header>
+
+    <center>
+
+        <a href="/">
+            <img src="{{ url_for('static', filename='img/logo2.jpg')}}">
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="">News</a></li>
+                <li><a href="">Opinions</a></li>
+                <li><a href="">Humor</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">A&E</a></li>
+                <li><a href="">Sports</a></li>
+            </ul>
+        </div>
+
+    </center>
+
+</header>
+
+<body>
+
+    {% block body %}
+    {% endblock %}
+
+</html>

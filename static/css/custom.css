@@ -1,0 +1,23 @@
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 6px 0px 6px;
+}
+
+.navbar ul li a {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+.navbar ul li a:hover {
+    color: #888;
+}
