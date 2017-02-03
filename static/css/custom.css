@@ -1,17 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
-    height: 100%;
+    margin: 0;
 }
 
 body {
-    min-height: 100%;
     width: 85%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .navbar ul {
@@ -38,11 +31,6 @@ body {
     color: #888;
 }
 
-.container {
-    flex: 1;
-
-}
-
 .footer {
     display: block;
     background: #fff;
@@ -51,21 +39,28 @@ body {
 
 .footer-sub-menu {
     display: inline-block;
-    width: 33.1%;
+    margin: 10px 0 0 0;
+    width: 24.7%;
 }
 
 .footer-sub-menu ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-.footer-sub-menu h3 {
-    color: #000;
+.footer-sub-menu ul li {
+    padding: 2px 0px 2px 20px;
+    color: #999;
+    font-size: 11px;
+    font-family: 'Helvetica';
+    text-transform: uppercase;
 }
 
-.footer-sub-menu ul li {
-    color: #999;
-    padding: 10px;
-    text-transform: uppercase;
+.footer-sub-menu+.footer-sub-menu { /*Every list-item that comes right after another list-item*/
+    border-left: 1px solid #d5d5d5;
+}
+
+
+.footer-sub-menu ul > li:first-child {
+    color: #000;
 }
