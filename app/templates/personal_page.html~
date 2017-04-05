@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% set active_page = "personal" %}
+
+{% block content_special %}
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Peronalized page</h1>
