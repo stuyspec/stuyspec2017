@@ -1,15 +1,49 @@
-{% extends "base.html" %}
+<html>
 
-{% set active_page = message  %}
+    <head>
 
-{% block content_special %}
-  
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Blah {{ message }}</h1>
-    </div>
-  </div> 
+        <title>Stuyvesant Spectator</title>
 
-{% endblock %}
+    </head>
 
+    <body>
 
+        <h1>Hi, {{ user.name }}!</h1>
+
+        <h2>Articles</h2>
+
+        {% for post in posts %}
+
+        <hr>
+
+        <div class="post">
+
+            <h3>title: {{ post.title }}</h3>
+
+            <p>
+                time: {{ post.timestamp }} <br>
+                articleID: {{ post.articleID }}
+            </p>
+
+            <h5>Written by:
+            {% for author in post.authors %}
+            {{ author.name }},
+            {% endfor %}
+            </h5>
+
+            <p>{{ post.body }}</p>
+
+            <b>viewcount: {{ post.viewcount }}</b>
+
+            <p>Tags:
+                {% for tag in post.tags %}
+                {{ tag }},
+                {% endfor %}
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+    </body>
+</html>
