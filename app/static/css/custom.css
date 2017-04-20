@@ -35,6 +35,20 @@ TABLE OF CONTENTS
 }
 
 @font-face {
+    font-family: 'cheltenham_bold';
+    src: url('../fonts/Cheltenham_Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cheltenham_bolditalic';
+    src: url('../fonts/Cheltenham_BoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'adobe_caslon_reg';
     src: url('../fonts/adobe_caslon_pro_regular.ttf');
     font-weight: normal;
@@ -48,20 +62,6 @@ TABLE OF CONTENTS
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'theinhardt_med';
-    src: url('../fonts/Theinhardt_Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'theindhardt_bold';
-    src: url('../fonts/Theinhardt_Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /*---------- 2.) default styles ----------*/
 
 
@@ -69,16 +69,22 @@ html {
     margin: 0;
 }
 
+body {
+    font-family: cheltenham_reg;
+}
+
 .container {
     width: 85%;
     margin: 0 auto;
 }
 
-.color-this-red {
-    color: red;
-}
-
 /*---------- 3.) base ----------*/
+
+/* header */
+
+.logo-container .logo {
+    text-align: center;
+}
 
 /* navbar */
 
@@ -89,20 +95,19 @@ html {
     -webkit-box-shadow: none !important;
 }
 
-.navbar-collapse .navbar-nav li {
-    display: inline-block;
-    margin: 15px;
+.navbar .navbar-nav li {
+    margin: 0px 10px;
     border: 1px solid #fff;
     border-radius: 5px;
     transition-duration: .1s;
 }
 
-.navbar-collapse .navbar-nav li:hover {
+.navbar .navbar-nav li:hover {
     cursor: default;
     background-color: #E3E3E3;
 }
 
-.navbar-collapse .navbar-nav li a {
+.navbar .navbar-nav li a {
     display: block;
     padding: 4px 5px;
     font-family: 'neutra_text_demi';
@@ -114,11 +119,30 @@ html {
     text-transform: uppercase;
 }
 
-.navbar-collapse .navbar-nav li a:hover,
-.navbar-collapse .navbar-nav li a:active,
-.navbar-collapse .navbar-nav li a:focus,
-.navbar-collapse .navbar-nav li a:visited, {
-    color: #000;
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus,
+.navbar .navbar-nav li a:visited, {
+    color: #000 !important;
+}
+
+@media (min-width: 768px) {
+
+    /* makes li's inline and centered */
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-nav li {
+        display: inline-block;
+    }
+
 }
 
 /* footer */
