@@ -21,40 +21,49 @@
 
     <body>
 
-        <!-- navbar (start) -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-	              <div class="collapse navbar-collapse" id="myNavbar">
-	                  <ul class="nav navbar-nav">
-	                      {% for href, id in navigation_bar %}
-	                      {% if href == "dropdown" and ((user and user.check_permission(permission)) or permission == 'all') %}
-		                    <li
-		                        {% for href_d, caption_d in id if href_d == active_page %}
-		                        class="active"
-		                        {% endfor %}
-		                    >
-		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">{{ caption | e }}<span class="caret"></span>
-		                        </a>
+        <div class="container">
 
-		                        <ul class="dropdown-menu">
-		                            {% for href_d, caption_d in id %}
-		                            <li><a href="{{ url_for(href_d) }}">{{ caption_d | e }}</a></li>
-		                            {% endfor %}
-		                        </ul>
-		                    </li>
-	                      {% else %}
-		                    {% if (user and user.check_permission(permission)) or permission == 'all' %}
-		                    <li {% if href == active_page %} class="active" {% endif %}>
-		                        <a href="{{ url_for(href) }}">{{ caption | e }}</a>
-		                    </li>
-		                    {% endif %}
-	                      {% endif %}
-	                      {% endfor %}
-	                  </ul>
-	              </div>
-            </div>
-        </nav>
-        <!-- navbar (end) -->
+            <!-- navbar (start) -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            {% for href, id in navigation_bar %}
+                            <li href="{{ category.href }}">{{ category }}</li>
+                            {% endfor %}
+
+                            <!--
+                            {% for href, id in navigation_bar %}
+                            {% if href == "dropdown" and ((user and user.check_permission(permission)) or permission == 'all') %}
+                            <li
+                                {% for href_d, caption_d in id if href_d == active_page %}
+                                class="active"
+                                {% endfor %}
+                            >
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">{{ caption | e }}<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    {% for href_d, caption_d in id %}
+                                    <li><a href="{{ url_for(href_d) }}">{{ caption_d | e }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% else %}
+                            {% if (user and user.check_permission(permission)) or permission == 'all' %} 
+                            <li {% if href == active_page %} class="active" {% endif %}>
+                                <a href="{{ url_for(href) }}">{{ caption | e }}</a>
+                            </li>
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar (end) -->
+
+        </div>
 
         {% block content %}{% endblock %}
 

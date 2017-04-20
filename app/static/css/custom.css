@@ -1,0 +1,32 @@
+html {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navbar-collapse .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse .navbar-nav li {
+    display: inline-block;
+    padding: 0px 6px 0px 6px;
+}
+
+.navbar-collapse .navbar-nav li a {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+    color: #888;
+}
