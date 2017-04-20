@@ -33,5 +33,6 @@ def index():
     ]
 
     return render_template("index.html",
+                           title="Stuyvesant Spectator",
                            posts=posts)
 

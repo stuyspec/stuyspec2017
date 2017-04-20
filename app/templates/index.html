@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Articles</h2>
+<h1 style="font-family: cheltenham_reg;">Octubre</h1>
 
     {% for post in posts %}
 
     <hr>
 
-    <div class="post">
+    <div class="post" style="font-family: cheltenham_reg">
 
-        <h3>title: {{ post.title }}</h3>
+        <h3 style="font-family:cheltenham_reg; text-transform: uppercase"> {{ post.title }}</h3>
 
         <p>
             time: {{ post.timestamp }} <br>
