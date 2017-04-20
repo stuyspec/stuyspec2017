@@ -5,29 +5,6 @@ from app import app
 @app.route('/index')
 
 def index():
-    user = {'name': 'Haley Cain'}
-    navigation_bar = [
-        {
-            '/news': {		
-                'id': 0
-            },
-            '/opinions': {
-                'id': 1
-            },
-            '/humor': {
-                'id': 2
-            },
-            '/features': {
-                'id': 3
-            },
-            '/ae': {
-                'id': 4
-            },
-            '/sports': {
-                'id': 5
-            }
-        }
-    ]
     posts = [
         {
             'timestamp': '2017-04-15 09:41:03',
@@ -56,7 +33,5 @@ def index():
     ]
 
     return render_template("index.html",
-                           user=user,
-                           posts=posts,
-                           navigation_bar=navigation_bar)
+                           posts=posts)
 

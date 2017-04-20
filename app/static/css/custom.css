@@ -1,3 +1,36 @@
+/*
+NOTES:
+
+Table of Contents
+
+1.) typography
+
+2.) default styles
+
+3.) base
+- navbar
+
+*/
+
+/*---------- 1.) typography ----------*/
+
+@font-face {
+    font-family: 'neutra_text_bold';
+    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutra_text_demi';
+    src: url('../fonts/neutra_text_tf_light_demi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*---------- 2.) default styles ----------*/
+
+
 html {
     margin: 0;
 }
@@ -7,26 +40,42 @@ html {
     margin: 0 auto;
 }
 
-.navbar-collapse .navbar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/*---------- 3.) base ----------*/
+
+/* navbar */
+
+.navbar-default {
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
 
 .navbar-collapse .navbar-nav li {
     display: inline-block;
-    padding: 0px 6px 0px 6px;
+    padding: 5px 2px;
+
+}
+
+.navbar-collapse .navbar-nav li:hover {
+    cursor: default;
+    background-color: #E3E3E3;
 }
 
 .navbar-collapse .navbar-nav li a {
-    font-family: 'Helvetica';
+    display: block;
+    margin: 15px;
+    padding: 0;
+    font-family: 'neutra_text_demi';
     font-weight: bold;
-    font-size: 15px;
-    color: #000;
+    color: #000000;
+    font-size: 12px;
+    line-height: 30px;
     text-decoration: none;
+    text-transform: uppercase;
     transition-duration: .2s;
 }
 
 .navbar-collapse .navbar-nav li a:hover {
-    color: #888;
+    cursor: pointer;
 }
