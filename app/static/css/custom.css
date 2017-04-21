@@ -62,6 +62,13 @@ TABLE OF CONTENTS
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'old_english_mt';
+    src: url('../fonts/Old_English_Text_MT.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*---------- 2.) default styles ----------*/
 
 
@@ -82,8 +89,27 @@ body {
 
 /* header */
 
-.logo-container .logo {
+.logo-container {
+    display: block;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.logo-container #logo {
+    position: relative;
+    width: 458px;
+    height: 75px;
+    margin: 0 auto;
+}
+
+.logo-container #logo h1 {
+    font-family: 'old_english_mt';
+    color: #000000;
+    font-size: 75px;
+}
+
+.logo-container #logo a:hover {
+    text-decoration: none;
 }
 
 /* navbar */
@@ -97,7 +123,7 @@ body {
 
 .navbar .navbar-nav li {
     margin: 0px 10px;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     border-radius: 5px;
     transition-duration: .1s;
 }
@@ -120,10 +146,10 @@ body {
 }
 
 .navbar .navbar-nav li a:hover,
-.navbar .navbar-nav li a:active,
 .navbar .navbar-nav li a:focus,
-.navbar .navbar-nav li a:visited, {
-    color: #000 !important;
+.navbar .navbar-nav li a:visited,
+.navbar .navbar-nav li a:active {
+    color: #000000;
 }
 
 @media (min-width: 768px) {
