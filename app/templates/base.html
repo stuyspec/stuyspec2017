@@ -41,11 +41,10 @@
                 ('/features', 'Features', 'all'),
                 ('/ae', 'A&E', 'all'),
                 ('/sports', 'Sports', 'all'),
-                ('dropdown',(
-                    ('/charter', 'Charter'),
-                    ('/sponsors', 'Sponsors')
-                ),
-                'all'),
+                ('/photo', 'Photo', 'all'),
+                ('/film', 'Video', 'all'),
+                ('/subscribe', 'Subscribe', 'all'),
+                ('/all','All','all'),
                 ]
                 %}
 
@@ -71,8 +70,15 @@
                                         {% endfor %}
                                     </ul>
                                 </li>
+
                                 {% else %}
-                                <li><a href="{{ href }}">{{ caption }}</a></li>
+                                <li>
+                                    <a href="{{ href }}"
+                                        {% if caption == "Subscribe" %}
+                                        class="text-red"
+                                        {% endif %}
+                                    >{{ caption }}</a></li>
+
                                 {% endif %}
 
                                 {% endfor %}

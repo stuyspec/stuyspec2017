@@ -87,6 +87,10 @@ body {
     margin: 0 auto;
 }
 
+.text-red {
+    color: #df3331 !important;
+}
+
 /*---------- 3.) base ----------*/
 
 /* header */
@@ -104,14 +108,14 @@ body {
     margin: 0 auto;
 }
 
-.logo-container #logo h1 {
+.logo-container #logo a:hover {
+    text-decoration: none;
+}
+
+.logo-container #logo a h1 {
     font-family: 'old_english_mt';
     color: #000000;
     font-size: 75px;
-}
-
-.logo-container #logo a:hover {
-    text-decoration: none;
 }
 
 /* navbar */
