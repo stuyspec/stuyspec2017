@@ -3,7 +3,6 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
-
 def index():
     posts = [
         {
@@ -31,8 +30,6 @@ def index():
             'tags': [9, 10, 0, 34, 2]
         }
     ]
-
     return render_template("index.html",
                            title="Stuyvesant Spectator",
                            posts=posts)
-

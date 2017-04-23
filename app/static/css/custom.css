@@ -91,6 +91,10 @@ body {
     color: #df3331 !important;
 }
 
+.text-underline {
+    text-decoration: underline !important;
+}
+
 /*---------- 3.) base ----------*/
 
 /* header */
@@ -108,8 +112,9 @@ body {
     margin: 0 auto;
 }
 
-.logo-container #logo a:hover {
-    text-decoration: none;
+.logo-container #logo a:hover,
+.logo-container #logo a:focus {
+    text-decoration: none !important;
 }
 
 .logo-container #logo a h1 {
@@ -158,7 +163,11 @@ body {
     color: #000000;
 }
 
-@media (min-width: 768px) {
+.navbar-header #logo {
+    display: none;
+}
+
+@media (min-width: 972px) {
 
     /* makes li's inline and centered */
 
@@ -175,6 +184,102 @@ body {
         display: inline-block;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 971px) {
+
+    /* triggers navbar collapse on 971px instead of Bootstrap 768px */
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display:block !important;
+    }
+}
+
+@media (max-width: 971px) {
+
+    /* triggers logo displacement on navbar collapse */
+
+    .header-wrapper #logo {
+        display: none;
+    }
+
+    .navbar-header {
+        margin: 0;
+    }
+
+    .navbar-header .navbar-toggle {
+        display: inline;
+    }
+
+    .navbar-header #logo {
+        display: inline;
+
+    }
+
+    .navbar-header #logo a h1 {
+        display: inline;
+        margin: 0;
+        font-size: 63px;
+    }
+
+    .navbar-toggle {
+        border: none;
+        position: relative;
+        top: 13px;
+        left: -40px;
+    }
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background: none !important;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #000000 !important;
+        width: 22px;
+        height: 3px;
+        border-radius: 0;
+    }
 }
 
 /* footer */
