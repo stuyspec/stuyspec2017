@@ -110,6 +110,7 @@ body {
     width: 458px;
     height: 75px;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .logo-container #logo a:hover,
@@ -239,6 +240,16 @@ body {
 
     /* triggers logo displacement on navbar collapse */
 
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
     .header-wrapper #logo {
         display: none;
     }
@@ -247,13 +258,20 @@ body {
         margin: 0;
     }
 
+    .header-wrapper {
+        width: 100%;
+        box-shadow: 0px 5px 10px #ddd;
+
+    }
+
     .navbar-header .navbar-toggle {
         display: inline;
+        position: relative;
+        left: 30px;
     }
 
     .navbar-header #logo {
         display: inline;
-
     }
 
     .navbar-header #logo a h1 {
