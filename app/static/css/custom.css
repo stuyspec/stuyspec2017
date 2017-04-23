@@ -128,7 +128,7 @@ body {
 
 .navbar-default {
     background: none !important;
-    border: 0 !important;
+    border: 0px solid black !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }

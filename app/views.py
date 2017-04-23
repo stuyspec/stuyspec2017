@@ -28,6 +28,30 @@ def index():
             'body': 'Stuyvesant High School provides excellent education.',
             'viewcount': 10,
             'tags': [9, 10, 0, 34, 2]
+        },
+        {
+            'timestamp': '2017-04-15 09:49:03',
+            'articleID': 109,
+            'title': 'Stuyvesant!',
+            'authors': [
+                {'name': 'Sabrina Wen'},
+                {'name': 'Angela Tom'},
+            ],
+            'body': 'Stuyvesant High School provides excellent education.',
+            'viewcount': 10,
+            'tags': [9, 10, 0, 34, 2]
+        },
+        {
+            'timestamp': '2017-04-15 09:49:03',
+            'articleID': 109,
+            'title': 'Stuyvesant!',
+            'authors': [
+                {'name': 'Sabrina Wen'},
+                {'name': 'Angela Tom'},
+            ],
+            'body': 'Stuyvesant High School provides excellent education.',
+            'viewcount': 10,
+            'tags': [9, 10, 0, 34, 2]
         }
     ]
     return render_template("index.html",
