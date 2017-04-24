@@ -16,6 +16,7 @@
 
         <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 
     </head>
 
@@ -26,12 +27,12 @@
             <div class="header-wrapper">
 
                 <section class="logo-container">
-                    <div id="logo">
-                        <a href="http://www.stuyspec.com/">
-                            <h1>Spectator</h1>
-                        </a>
-                    </div>
-                </section>
+
+                <div id="logo">
+                    <a href="http://www.stuyspec.com/">
+                        <h1>Spectator</h1>
+                    </a>
+                </div>
 
                 {%
                 set navigation_bar = [
@@ -41,18 +42,24 @@
                 ('/features', 'Features', 'all'),
                 ('/ae', 'A&E', 'all'),
                 ('/sports', 'Sports', 'all'),
-                ('dropdown',(
-                    ('/charter', 'Charter'),
-                    ('/sponsors', 'Sponsors')
-                ),
-                'all'),
+                ('/photo', 'Photo', 'all'),
+                ('/film', 'Video', 'all'),
+                ('/subscribe', 'Subscribe', 'all'),
+                ('/all','All','all'),
                 ]
                 %}
 
-                <nav class="navbar navbar-default">
+                <nav class="navbar navbar-default fixme" id="mainNav">
+
                     <div class="container-fluid">
+
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <div id="logo">
+                                <a href="http://www.stuyspec.com/">
+                                    <h1>Spectator</h1>
+                                </a>
+                            </div>
+                            <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -64,15 +71,25 @@
 
                                 {% if href == "dropdown" %}
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="">Page 1 <span class="caret"></span></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="">DEFAULT_DROPDOWN_LABEL<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         {% for href_d, caption_d in caption %}
                                         <li><a href="{{ href_d }}">{{ caption_d }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </li>
+
                                 {% else %}
-                                <li><a href="{{ href }}">{{ caption }}</a></li>
+                                <li>
+                                    <a href="{{ href }}"
+                                       {% if caption == "Subscribe" %}
+                                       class="text-red"
+                                       {% endif %}
+                                       {% if caption == "All" %}
+                                       class="text-underline"
+                                        {% endif %}
+                                    >{{ caption }}</a></li>
+
                                 {% endif %}
 
                                 {% endfor %}
@@ -108,7 +125,14 @@
                 </nav>
                 <!-- navbar (end) -->
 
+                </section>
+
+            </div>
+
+            <div class="content">
+
                 {% block content %}{% endblock %}
+
             </div>
 
         </div>
