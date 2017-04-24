@@ -172,6 +172,8 @@ body {
 
 .fixed-topnav {
     position: fixed;
+    top: 0;
+    width: 100%;
     /* the following line of code removes text blur under the box shadow, credits to nyr. */
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
                 0 -5px 3px -10px #fff;
@@ -268,6 +270,15 @@ body {
 
     .header-wrapper #logo {
         display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* the following line of code removes text blur under the box shadow, credits to nyr. */
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                    0 -5px 3px -10px #fff;
     }
 
     .navbar-header {
