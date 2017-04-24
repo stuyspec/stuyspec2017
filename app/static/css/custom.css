@@ -83,6 +83,10 @@ body {
 }
 
 .container {
+    width: 100%;
+}
+
+.content {
     width: 85%;
     margin: 0 auto;
 }
@@ -127,10 +131,8 @@ body {
 /* navbar */
 
 .navbar-default {
-    background: none !important;
+    background-color: #fff !important;
     border: 0px solid black !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
 }
 
 .navbar .navbar-nav li {
@@ -168,20 +170,34 @@ body {
     display: none;
 }
 
+.fixed-topnav {
+    position: fixed;
+    /* the following line of code removes text blur under the box shadow, credits to nyr. */
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                0 -5px 3px -10px #fff;
+}
+
 @media (min-width: 972px) {
 
     /* makes li's inline and centered */
 
+    .navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .navbar .navbar-collapse {
+        padding-top: 6px; /* vertically aligns inner navbar-nav */
         text-align: center;
     }
 
-    .navbar .navbar-nav {
+    .navbar .navbar-collapse .navbar-nav {
         display: inline-block;
         float: none;
     }
 
-    .navbar .navbar-nav li {
+    .navbar .navbar-collapse .navbar-nav li {
         display: inline-block;
     }
 
@@ -260,8 +276,6 @@ body {
 
     .header-wrapper {
         width: 100%;
-        box-shadow: 0px 5px 10px #ddd;
-
     }
 
     .navbar-header .navbar-toggle {
