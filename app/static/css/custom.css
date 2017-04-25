@@ -7,7 +7,9 @@ TABLE OF CONTENTS
 2.) default styles
 
 3.) base
+- header
 - navbar
+- footer
 
 */
 
@@ -81,8 +83,20 @@ body {
 }
 
 .container {
+    width: 100%;
+}
+
+.content {
     width: 85%;
     margin: 0 auto;
+}
+
+.text-red {
+    color: #df3331 !important;
+}
+
+.text-underline {
+    text-decoration: underline !important;
 }
 
 /*---------- 3.) base ----------*/
@@ -100,25 +114,25 @@ body {
     width: 458px;
     height: 75px;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
-.logo-container #logo h1 {
+.logo-container #logo a:hover,
+.logo-container #logo a:focus {
+    text-decoration: none !important;
+}
+
+.logo-container #logo a h1 {
     font-family: 'old_english_mt';
     color: #000000;
     font-size: 75px;
 }
 
-.logo-container #logo a:hover {
-    text-decoration: none;
-}
-
 /* navbar */
 
 .navbar-default {
-    background: none !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    background-color: #fff !important;
+    border: 0px solid black !important;
 }
 
 .navbar .navbar-nav li {
@@ -152,23 +166,163 @@ body {
     color: #000000;
 }
 
-@media (min-width: 768px) {
+.navbar-header #logo {
+    display: none;
+}
+
+.fixed-topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* the following line of code removes text blur under the box shadow, credits to nyr. */
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                0 -5px 3px -10px #fff;
+}
+
+@media (min-width: 972px) {
 
     /* makes li's inline and centered */
 
+    .navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .navbar .navbar-collapse {
+        padding-top: 6px; /* vertically aligns inner navbar-nav */
         text-align: center;
     }
 
-    .navbar .navbar-nav {
+    .navbar .navbar-collapse .navbar-nav {
         display: inline-block;
         float: none;
     }
 
-    .navbar .navbar-nav li {
+    .navbar .navbar-collapse .navbar-nav li {
         display: inline-block;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 971px) {
+
+    /* triggers navbar collapse on 971px instead of Bootstrap 768px */
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display:block !important;
+    }
+}
+
+@media (max-width: 971px) {
+
+    /* triggers logo displacement on navbar collapse */
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .header-wrapper #logo {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* the following line of code removes text blur under the box shadow, credits to nyr. */
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                    0 -5px 3px -10px #fff;
+    }
+
+    .navbar-header {
+        margin: 0;
+    }
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .navbar-header .navbar-toggle {
+        display: inline;
+        position: relative;
+        left: 30px;
+    }
+
+    .navbar-header #logo {
+        display: inline;
+    }
+
+    .navbar-header #logo a h1 {
+        display: inline;
+        margin: 0;
+        font-size: 63px;
+    }
+
+    .navbar-toggle {
+        border: none;
+        position: relative;
+        top: 13px;
+        left: -40px;
+    }
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background: none !important;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #000000 !important;
+        width: 22px;
+        height: 3px;
+        border-radius: 0;
+    }
 }
 
 /* footer */
