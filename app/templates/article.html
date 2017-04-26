@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+ p.red-name {
+	   font-family: "cheltenham_reg";
+	   text-transform: uppercase;
+	   color: red;
+	   font-size: 14px;
+ }
+ h1.big-title {
+	   font-family: "cheltenham_bolditalic";
+	   text-transform: uppercase;
+ }
+
+ .authortimestamp {
+	   font-family: "neutra_text_demi";
+	   float: left;
+ }
+
+ .social-media {
+	   position: relative;
+	   bottom: 0px;
+	   top: 135px;
+	   float: right;
+ }
+ .fa-facebook {
+	   background:#3b5998;
+	   float: right;
+	   color: white;
+	   width: 40px;
+	   height: 40px;
+	   border-radius: 20px;
+	   text-align: center;
+	   padding-top: 2%;
+	   transition: all 0.3s ease-in-out;
+	   
+ }
+
+ .fa-twitter {
+	   background:#00aced;
+	   float: right;
+	   color: white;
+	   width: 40px;
+	   height: 40px;
+	   border-radius: 20px;
+	   text-align: center;
+	   margin-right: 10px;
+	   padding-top: 2%;
+	   transition: all 0.3s ease-in-out;
+ }
+ * {
+     box-sizing: border-box;
+ }
+ img{
+     width:100%;
+     max-width:900px;
+     height:100%;
+     max-height:800px;
+ }
+ .main.caption{
+     position: absolute;
+     height:50px;
+     line-height:30px;
+     width:100%;
+     font-family: 'adobe_caslon_reg';
+     font-style:italic;
+ }
+ .right-rail{
+     width: 25%;
+     float: right;
+     padding: 15px;
+     border: 1px;
+ }
+ .main{
+     width: 75%;
+     float: left;
+     padding: 15px;
+     border: 1px;
+ }
+ .main .pb{
+     font-family: 'neutra_face_demi';
+     position: absolute;
+     height:50px;
+     width:100%;
+ }
+ .main .p {
+     font-family: 'cheltenham_reg';
+     line-height: 1.5;
+ }
+ .main .int{
+     float: left;
+     font-size: 44px;
+     line-height: 35px;
+     padding-top: 3px;
+     padding-right: 3px;
+ }
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="row">
+			<div class="col-sm-9 col-md-9"> <!-- unecessary col -->
+				<p class="red-name">
+				Author's Name<br>
+				</p>
+				<h1 class="big-title">
+				Trump's first 100 days
+				</h1><br>
+				<div class="authortimestamp">
+				<strong>By Author's Name</strong>
+                <small>2:17AM</small>
+				</div>
+			</div>
+			<div class="col-sm-3 col-md-3"> <!-- unecessary col, can just float right -->
+				<div class="social-media">
+				<a href="http://facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="http://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>
+				</div>
+			</div>
+</div>
+    <figure id="featured-item"> <!--  better naming and better sizing, don't center -->
+        <a class="image"><img src="https://c1.staticflickr.com/2/1520/24330829813_944c817720_b.jpg" alt="The Pulpit Rock"></a>
+        <figcaption class="caption">Put caption here.</figcaption>
+        <p class="pb">Photograph by...</p></br></br>
+    </figure>
+    <p style="margin-left: 1em;">
+        <span class="int">S</span>ome random things JUST TO SHOW THAT THIS ACTUALLY WORK!!! 
+        Panda1234567891 i gues this is good enough isn't it......... 
+        just wanna fill the space.... BAMMMM-- By Qichen Deng</p>
+    </div>
+
+    <div class="right-rail">
+        put ad right around here........
+    </div>-->
+  {% endblock %}
