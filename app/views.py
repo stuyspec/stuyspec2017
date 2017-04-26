@@ -60,4 +60,4 @@ def index():
 
 @app.route('/test')
 def test():
-    return render_template("article-header.html")
+    return render_template("article.html")
