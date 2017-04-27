@@ -13,7 +13,6 @@ TABLE OF CONTENTS
 
 4.) article
 - header
-- featured image
 - content
 
 */
@@ -391,22 +390,41 @@ h1.big-title {
     box-sizing: border-box;
 }
 
+
 /* featured image */
 
+.article-body {
+}
 
-.pb {
-    font-family: 'neutra_face_demi';
-    position: absolute;
-    height: 50px;
+.media {
+    width: 60%;
+}
+
+.media .image img {
     width: 100%;
 }
 
-.p {
-    font-family: 'cheltenham_reg';
-    line-height: 1.5;
+.media figcaption {
+    display: block;
+    margin-top: 7px;
+    font-family: 'adobe_caslon_italic';
+    font-size: 18px;
+    line-height: 1em;
+}
+
+.media figcaption .caption-credit {
+    display: block;
+    margin-top: 7px;
+    font-family: 'neutra_text_bold';
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 /* content */
+
+.article-body {
+    width: 50%;
+}
 
 .right-rail {
     width: 25%;
