@@ -11,6 +11,8 @@ TABLE OF CONTENTS
 - navbar
 - footer
 
+4.) article
+
 */
 
 /*---------- 1.) typography ----------*/
@@ -328,3 +330,108 @@ body {
 
 /* footer */
 
+
+/*---------- 4.) article ----------*/
+
+p.red-name {
+    font-family: "cheltenham_reg";
+    text-transform: uppercase;
+    color: red;
+    font-size: 14px;
+}
+
+h1.big-title {
+    font-family: "cheltenham_bolditalic";
+    text-transform: uppercase;
+}
+
+.authortimestamp {
+    font-family: "neutra_text_demi";
+    float: left;
+}
+
+.social-media {
+    position: relative;
+    bottom: 0px;
+    top: 135px;
+    float: right;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    float: right;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 2%;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-twitter {
+    background: #00aced;
+    float: right;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 2%;
+    transition: all 0.3s ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    max-height: 800px;
+}
+
+.main.caption {
+    position: absolute;
+    height: 50px;
+    line-height: 30px;
+    width: 100%;
+    font-family: 'adobe_caslon_reg';
+    font-style: italic;
+}
+
+.right-rail {
+    width: 25%;
+    float: right;
+    padding: 15px;
+    border: 1px;
+}
+
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px;
+}
+
+.main .pb {
+    font-family: 'neutra_face_demi';
+    position: absolute;
+    height: 50px;
+    width: 100%;
+}
+
+.main .p {
+    font-family: 'cheltenham_reg';
+    line-height: 1.5;
+}
+
+.main .int {
+    float: left;
+    font-size: 44px;
+    line-height: 35px;
+    padding-top: 3px;
+    padding-right: 3px;
+}

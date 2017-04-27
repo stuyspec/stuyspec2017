@@ -57,7 +57,12 @@ def index():
     return render_template("index.html",
                            title="Stuyvesant Spectator",
                            posts=posts)
-
-@app.route('/test')
-def test():
+@app.route('/<department>/<name>')
+def load_article():
     return render_template("article.html")
+
+# for testing purposes
+@app.route('/article-test')
+def test_article():
+    return render_template("article.html",
+                           title="Article")
