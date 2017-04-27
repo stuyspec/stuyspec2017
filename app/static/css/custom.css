@@ -12,6 +12,9 @@ TABLE OF CONTENTS
 - footer
 
 4.) article
+- header
+- featured image
+- content
 
 */
 
@@ -333,6 +336,8 @@ body {
 
 /*---------- 4.) article ----------*/
 
+/* header */
+
 p.red-name {
     font-family: "cheltenham_reg";
     text-transform: uppercase;
@@ -386,52 +391,26 @@ h1.big-title {
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    max-height: 800px;
-}
+/* featured image */
 
-.main.caption {
-    position: absolute;
-    height: 50px;
-    line-height: 30px;
-    width: 100%;
-    font-family: 'adobe_caslon_reg';
-    font-style: italic;
-}
 
-.right-rail {
-    width: 25%;
-    float: right;
-    padding: 15px;
-    border: 1px;
-}
-
-.main {
-    width: 75%;
-    float: left;
-    padding: 15px;
-    border: 1px;
-}
-
-.main .pb {
+.pb {
     font-family: 'neutra_face_demi';
     position: absolute;
     height: 50px;
     width: 100%;
 }
 
-.main .p {
+.p {
     font-family: 'cheltenham_reg';
     line-height: 1.5;
 }
 
-.main .int {
-    float: left;
-    font-size: 44px;
-    line-height: 35px;
-    padding-top: 3px;
-    padding-right: 3px;
+/* content */
+
+.right-rail {
+    width: 25%;
+    float: right;
+    padding: 15px;
+    border: 1px;
 }
