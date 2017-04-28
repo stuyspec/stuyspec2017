@@ -1,16 +1,19 @@
 from app import db
 
 class User(db.Model):
-    userID = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(64), index=True, unique=True)
+    id = db.Column(db.Integer, primary_key=True)
+    nickname = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
+    articles = db.relationship('Article', backref='author', lazy='dynamic')
 
     def __repr__(self):
-        return '<User %r>' % (self.name)
+        return '<User %r>' % (self.nickname)
 
-class Tag(db.Model):
-    tagID = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String(64), index=True, unique=True)
+class Article(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    body = db.Column(db.String(140))
+    timestamp = db.Column(db.DateTime)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
-        return '<Tag %r>' % (self.text);
+        return '<Article %r>' % (self.body)

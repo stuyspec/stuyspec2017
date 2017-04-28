@@ -1,5 +1,5 @@
 from flask import render_template
-from app import app
+from app import app, db, models
 
 @app.route('/')
 @app.route('/index')
@@ -57,9 +57,11 @@ def index():
     return render_template("index.html",
                            title="Stuyvesant Spectator",
                            posts=posts)
-@app.route('/<department>/<name>')
-def load_article():
-    return render_template("article.html")
+
+def write_articles():
+    
+
+def laod_articles():
 
 # for testing purposes
 @app.route('/article-test')
