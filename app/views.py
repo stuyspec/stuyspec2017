@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app, db, models
+import datetime
 
 @app.route('/')
 @app.route('/index')
@@ -58,8 +59,9 @@ def index():
                            title="Stuyvesant Spectator",
                            posts=posts)
 
-def write_articles():
-    return 0
+def write_article(user, article):
+    u = models.User(nickname='susan', email='susan@email.com')
+
 
 def laod_articles():
     return 0

@@ -77,7 +77,6 @@ TABLE OF CONTENTS
 
 /*---------- 2.) default styles ----------*/
 
-
 html {
     margin: 0;
 }
@@ -337,17 +336,57 @@ body {
 
 /* header */
 
-p.red-name {
-    font-family: "cheltenham_reg";
+.department-name {
+    font-family: "neutra_text_bold";
     text-transform: uppercase;
-    color: red;
-    font-size: 14px;
 }
 
-h1.big-title {
-    font-family: "cheltenham_bolditalic";
-    text-transform: uppercase;
+.article-title {
+    font-family: "cheltenham_reg";
 }
+
+.article-header .header-inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.article-header .header-inline .header-left {
+    float: left;
+}
+
+.article-header .header-inline .header-right {
+    float: right;
+}
+
+.article-header .header-inline li a {
+    display: block;
+    font-family: "cheltenham_reg";
+}
+
+.article-header .header-inline li #byline {
+    font-family: "cheltenham_bold";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .authortimestamp {
     font-family: "neutra_text_demi";
@@ -390,20 +429,44 @@ h1.big-title {
     box-sizing: border-box;
 }
 
-/* content body */
+/* article body */
 
+.article-body {
+    width: 60%;
+}
 
-.pb {
-    font-family: 'neutra_face_demi';
-    position: absolute;
-    height: 50px;
+.article-body .media {
+    margin-bottom: 15px;
+}
+
+.article-body .media .image img {
     width: 100%;
 }
 
-.p {
-    font-family: 'cheltenham_reg';
-    line-height: 1.5;
+.article-body .media figcaption {
+    display: block;
+    margin-top: 7px;
+    font-family: 'adobe_caslon_italic';
+    font-size: 18px;
+    line-height: 1em;
 }
+
+.article-body .media figcaption .caption-credit {
+    display: block;
+    margin-top: 7px;
+    font-family: 'neutra_text_bold';
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.article-body p {
+}
+
+.article-body p.descender::first-letter {
+    initial-letter: 2;
+}
+
+/* right rail */
 
 .right-rail {
     width: 25%;
@@ -411,3 +474,5 @@ h1.big-title {
     padding: 15px;
     border: 1px;
 }
+
+
