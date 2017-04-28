@@ -13,7 +13,7 @@ TABLE OF CONTENTS
 
 4.) article
 - header
-- content
+- article body
 
 */
 
@@ -391,20 +391,17 @@ h1.big-title {
 }
 
 
-/* featured image */
+/* article body */
 
 .article-body {
-}
-
-.media {
     width: 60%;
 }
 
-.media .image img {
+.article-body .media .image img {
     width: 100%;
 }
 
-.media figcaption {
+.article-body .media figcaption {
     display: block;
     margin-top: 7px;
     font-family: 'adobe_caslon_italic';
@@ -412,7 +409,7 @@ h1.big-title {
     line-height: 1em;
 }
 
-.media figcaption .caption-credit {
+.article-body .media figcaption .caption-credit {
     display: block;
     margin-top: 7px;
     font-family: 'neutra_text_bold';
@@ -420,11 +417,14 @@ h1.big-title {
     text-transform: uppercase;
 }
 
-/* content */
-
-.article-body {
-    width: 50%;
+.article-body p {
+    
 }
+
+
+
+
+/* right rail */
 
 .right-rail {
     width: 25%;
@@ -432,3 +432,5 @@ h1.big-title {
     padding: 15px;
     border: 1px;
 }
+
+
