@@ -13,8 +13,7 @@ TABLE OF CONTENTS
 
 4.) article
 - header
-- featured image
-- content
+- article body
 
 */
 
@@ -391,7 +390,7 @@ h1.big-title {
     box-sizing: border-box;
 }
 
-/* featured image */
+/* content body */
 
 
 .pb {
@@ -405,8 +404,6 @@ h1.big-title {
     font-family: 'cheltenham_reg';
     line-height: 1.5;
 }
-
-/* content */
 
 .right-rail {
     width: 25%;

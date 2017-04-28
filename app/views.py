@@ -59,9 +59,10 @@ def index():
                            posts=posts)
 
 def write_articles():
-    
+    return 0
 
 def laod_articles():
+    return 0
 
 # for testing purposes
 @app.route('/article-test')
