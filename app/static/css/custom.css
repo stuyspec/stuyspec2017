@@ -20,16 +20,16 @@ TABLE OF CONTENTS
 /*---------- 1.) typography ----------*/
 
 @font-face {
-    font-family: 'neutra_text_bold';
-    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
+    font-family: 'neutra_text_demi';
+    src: url('../fonts/neutra_text_tf_light_demi.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'neutra_text_demi';
-    src: url('../fonts/neutra_text_tf_light_demi.ttf');
-    font-weight: normal;
+    font-family: 'neutra_text_bold';
+    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -43,15 +43,15 @@ TABLE OF CONTENTS
 @font-face {
     font-family: 'cheltenham_bold';
     src: url('../fonts/Cheltenham_Bold.ttf');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'cheltenham_bolditalic';
     src: url('../fonts/Cheltenham_BoldItalic.ttf');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
@@ -65,12 +65,19 @@ TABLE OF CONTENTS
     font-family: 'adobe_caslon_italic';
     src: url('../fonts/adobe_caslon_pro_italic.ttf');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'old_english_mt';
     src: url('../fonts/Old_English_Text_MT.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'goudy_old_reg';
+    src: url('../fonts/Goudy Old Style Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
