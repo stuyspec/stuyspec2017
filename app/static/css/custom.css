@@ -14,7 +14,7 @@ TABLE OF CONTENTS
 4.) article
 - header
 - article body
-
+- footer
 */
 
 /*---------- 1.) typography ----------*/
@@ -482,4 +482,19 @@ body {
     border: 1px;
 }
 
+/* article footer */
+.avatar {
+    display:inline-block;
+    width:20%;
+    float:left;
+}
 
+.author-description {
+    font-family: 'adobe_caslon_italic';
+    display:inline-block;
+}
+
+.read-more {
+    font-family: 'neutra_text_bold';
+    display:inline;
+}
