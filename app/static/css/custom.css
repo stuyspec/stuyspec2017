@@ -11,7 +11,9 @@ TABLE OF CONTENTS
 - navbar
 - footer
 
-*/
+4.) article
+- header
+- content
 
 /*---------- 1.) typography ----------*/
 
@@ -325,4 +327,50 @@ body {
     }
 }
 
+/* content */
+#indent {
+    box-sizing: border-box;
+}
+.right-rail {
+    width: 25%;
+    float: right;
+    padding: 15px;
+    border: 1px;
+}
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px;
+    padding-left: 30px;
+}
+.p {
+    font-family: 'cheltenham_reg';
+    line-height: 1.5;
+}
+.indent {
+    float: left;
+    font-size: 44px;
+    line-height: 35px;
+    padding-top: 3px;
+}
+
 /* footer */
+
+/*---------- 4.) article ----------*/
+
+/* header */
+.article-header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article-header li {
+    float: left;
+}
+
+.article-header li a {
+    display: block;
+    padding: 8px;
+}
