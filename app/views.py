@@ -61,4 +61,9 @@ def index():
 @app.route('/article')
 def article():
     return render_template("article.html",
+
                            title="Article")
+@app.route('/charlie_wilson')
+def charlie_wilson():
+    return render_template("charlie_wilson.html",
+                           title="Charlie Wilson")
