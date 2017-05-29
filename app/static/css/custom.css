@@ -13,9 +13,14 @@ TABLE OF CONTENTS
 
 4.) article
 - header
+<<<<<<< HEAD
 - article body
 - footer
 */
+=======
+- featured img
+- content
+>>>>>>> charlie_wilson
 
 /*---------- 1.) typography ----------*/
 
@@ -34,36 +39,42 @@ TABLE OF CONTENTS
 }
 
 @font-face {
-    font-family: 'cheltenham_reg';
-    src: url('../fonts/Cheltenham_Regular.ttf');
+    font-family: 'minion_reg';
+    src: url('../fonts/Minion_Pro_Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'cheltenham_bold';
     src: url('../fonts/Cheltenham_Bold.ttf');
     font-weight: bold;
+=======
+    font-family: 'minion_italic';
+    src: url('../fonts/Minion_Pro_Italic.ttf');
+    font-weight: normal;
+>>>>>>> charlie_wilson
     font-style: normal;
 }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'cheltenham_bolditalic';
     src: url('../fonts/Cheltenham_BoldItalic.ttf');
     font-weight: bold;
     font-style: italic;
-}
-
-@font-face {
-    font-family: 'adobe_caslon_reg';
-    src: url('../fonts/adobe_caslon_pro_regular.ttf');
+=======
+    font-family: 'minion_bold';
+    src: url('../fonts/Minion_Pro_Bold.ttf');
     font-weight: normal;
     font-style: normal;
+>>>>>>> charlie_wilson
 }
 
 @font-face {
-    font-family: 'adobe_caslon_italic';
-    src: url('../fonts/adobe_caslon_pro_italic.ttf');
+    font-family: 'minion_bolditalic';
+    src: url('../fonts/Minion_Pro_BoldItalic.ttf');
     font-weight: normal;
     font-style: italic;
 }
@@ -89,15 +100,19 @@ html {
 }
 
 body {
-    font-family: cheltenham_reg;
+    font-family: minion_reg;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 100%;
+    padding: 0;
 }
 
 .content {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -112,7 +127,6 @@ body {
 /*---------- 3.) base ----------*/
 
 /* header */
-
 .logo-container {
     display: block;
     text-align: center;
@@ -140,10 +154,18 @@ body {
 
 /* navbar */
 
+.header-wrapper {
+    background: #fff;
+}
+
 .navbar-default {
     background-color: #fff !important;
     border: 0px solid black !important;
     z-index: 5000 !important;
+}
+
+.navbar-inverted {
+    background-color: #000 !important;
 }
 
 .navbar .navbar-nav li {
@@ -161,13 +183,17 @@ body {
 .navbar .navbar-nav li a {
     display: block;
     padding: 4px 5px;
-    font-family: 'neutra_text_demi';
+    font-family: Arial;
     font-weight: bold;
     color: #000000;
     font-size: 0.9em;
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.navbar-inverted .navbar-nav li a {
+    color: #fff;
 }
 
 .navbar .navbar-nav li a:hover,
@@ -336,153 +362,95 @@ body {
     }
 }
 
-/* footer */
-
-
 /*---------- 4.) article ----------*/
 
+/* sizes */
+
+#article-header,
+#article-footer {
+    display: block;
+    min-height: 40px;
+}
+
 /* header */
-
-.department-name {
-    font-family: "neutra_text_bold";
-    text-transform: uppercase;
-}
-
-.article-title {
-    font-family: "cheltenham_reg";
-}
-
-.article-header .header-inline {
+#article-header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+#article-header li {
+    float: left;
+}
+
+#article-header li a {
+    display: block;
+    padding: 8px;
+}
+
+/* layout */
+#content-wrap {
     overflow: hidden;
 }
 
-.article-header .header-inline .header-left {
+#right-rail {
+    float: right;
+    width: 40%;
+}
+
+#content-wrap {
     float: left;
-}
-
-.article-header .header-inline .header-right {
-    float: right;
-}
-
-.article-header .header-inline li a {
-    display: block;
-    font-family: "cheltenham_reg";
-}
-
-.article-header .header-inline li #byline {
-    font-family: "cheltenham_bold";
-}
-
-
-
-
-
-
-
-
-.authortimestamp {
-    font-family: "neutra_text_demi";
-    float: left;
-}
-
-.social-media {
-    position: relative;
-    bottom: 0px;
-    top: 135px;
-    float: right;
-}
-
-.fa-facebook {
-    background: #3b5998;
-    float: right;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    padding-top: 2%;
-    transition: all 0.3s ease-in-out;
-}
-
-.fa-twitter {
-    background: #00aced;
-    float: right;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    text-align: center;
-    margin-right: 10px;
-    padding-top: 2%;
-    transition: all 0.3s ease-in-out;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/* article body */
-
-.article-body {
     width: 60%;
 }
 
-.article-body .media {
-    margin-bottom: 15px;
+/* featured img */
+#featured-img {
+    display: block;
+    font-family: minion_reg;
 }
 
-.article-body .media .image img {
+#featured-img img {
     width: 100%;
 }
 
-.article-body .media figcaption {
-    display: block;
-    margin-top: 7px;
-    font-family: 'adobe_caslon_italic';
-    font-size: 18px;
-    line-height: 1em;
+#featured-img figcaption {
+    margin-top: 6px;
+    line-height: 16px;
 }
 
-.article-body .media figcaption .caption-credit {
-    display: block;
-    margin-top: 7px;
-    font-family: 'neutra_text_bold';
+#featured-img figcaption #caption {
+    font-size: 14px;
+}
+
+#featured-img figcaption #credit {
     font-size: 13px;
-    text-transform: uppercase;
+    color: #aaa;
 }
 
-.article-body p {
+/* content */
+
+.media {}
+
+.media figcaption {
+    font-size: 16px;
+    font-family: minion_reg;
+    color: #555;
 }
 
-.article-body p.descender::first-letter {
-    initial-letter: 2;
+#content-wrap .article-content {
+    font-family: minion_reg;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 30px;
 }
 
-/* right rail */
-
-.right-rail {
-    width: 25%;
-    float: right;
-    padding: 15px;
-    border: 1px;
-}
-
-/* article footer */
-.avatar {
-    display:inline-block;
-    width:20%;
-    float:left;
-}
-
-.author-description {
-    font-family: 'adobe_caslon_italic';
-    display:inline-block;
-}
-
-.read-more {
-    font-family: 'neutra_text_bold';
-    display:inline;
+#dropcap {
+    font-family: minion_italic;
+    float: left;
+    font-size: 5em;
+    line-height: 83px;
+    padding-top: 7px;
+    padding-right: 14px;
+    padding-left: 3px;
+>>>>>>> charlie_wilson
 }

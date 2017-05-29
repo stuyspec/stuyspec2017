@@ -59,15 +59,28 @@ def index():
                            title="Stuyvesant Spectator",
                            posts=posts)
 
-def write_article(user, article):
-    u = models.User(nickname='susan', email='susan@email.com')
 
-
-def laod_articles():
-    return 0
-
-# for testing purposes
-@app.route('/article-test')
-def test_article():
+@app.route('/article')
+def article():
     return render_template("article.html",
                            title="Article")
+
+@app.route('/l_train')
+def l_train():
+    return render_template("l_train.html",
+                           title="L Train")
+
+@app.route('/the_week')
+def the_week():
+    return render_template("the_week.html",
+                           title="The Week")
+
+@app.route('/goings_on')
+def goings_on():
+    return render_template("goings_on.html",
+                           title="Goings On")
+
+@app.route('/antarctica')
+def antarctica():
+    return render_template("antarctica.html",
+                           title="Antarctica")
