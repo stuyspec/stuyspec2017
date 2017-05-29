@@ -33,36 +33,29 @@ TABLE OF CONTENTS
 }
 
 @font-face {
-    font-family: 'cheltenham_reg';
-    src: url('../fonts/Cheltenham_Regular.ttf');
+    font-family: 'minion_reg';
+    src: url('../fonts/Minion_Pro_Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'cheltenham_bold';
-    src: url('../fonts/Cheltenham_Bold.ttf');
+    font-family: 'minion_italic';
+    src: url('../fonts/Minion_Pro_Italic.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'cheltenham_bolditalic';
-    src: url('../fonts/Cheltenham_BoldItalic.ttf');
+    font-family: 'minion_bold';
+    src: url('../fonts/Minion_Pro_Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'adobe_caslon_reg';
-    src: url('../fonts/adobe_caslon_pro_regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'adobe_caslon_italic';
-    src: url('../fonts/adobe_caslon_pro_italic.ttf');
+    font-family: 'minion_bolditalic';
+    src: url('../fonts/Minion_Pro_BoldItalic.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -82,7 +75,7 @@ html {
 }
 
 body {
-    font-family: cheltenham_reg;
+    font-family: minion_reg;
 }
 
 .container {
@@ -372,7 +365,7 @@ body {
 /* featured img */
 #featured-img {
     display: block;
-    font-family: cheltenham_reg;
+    font-family: minion_reg;
 }
 
 #featured-img img {
@@ -398,18 +391,19 @@ body {
 
 .media figcaption {
     font-size: 16px;
-    font-family: cheltenham_reg;
+    font-family: minion_reg;
     color: #555;
 }
 
 #content-wrap .article-content {
-    font-family: cheltenham_reg;
-    font-size: 18px;
+    font-family: minion_reg;
+    font-size: 20px;
     margin-top: 24px;
-    line-height: 27.5px;
+    line-height: 30px;
 }
 
 #dropcap {
+    font-family: minion_italic;
     float: left;
     font-size: 68px;
     line-height: 45px;
