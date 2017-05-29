@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% set title = title | default('DEFAULT_TITLE') %}
+
+<html lang="en">
+
+    <head>
+
+        <title>{{ title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    </head>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/charlie_wilson.css') }}">
+
+<article id="story">
+
+    <figure id="cover">
+        <div class="image">
+            <img class="fixed" src="{{ url_for('static', filename='img/maxresalt.jpg') }}"/>
+        </div>
+    </figure>
+
+    <a id="home-link" href="/">THE SPEC</a>
+
+</article>

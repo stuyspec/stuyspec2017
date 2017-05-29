@@ -64,6 +64,6 @@ def article():
 
                            title="Article")
 @app.route('/charlie_wilson')
-def charlie_wilson():
+def charlie_wilsonaa():
     return render_template("charlie_wilson.html",
                            title="Charlie Wilson")
