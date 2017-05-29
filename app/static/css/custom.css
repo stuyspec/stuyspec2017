@@ -76,10 +76,14 @@ html {
 
 body {
     font-family: minion_reg;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 100%;
+    padding: 0;
 }
 
 .content {
@@ -98,7 +102,6 @@ body {
 /*---------- 3.) base ----------*/
 
 /* header */
-
 .logo-container {
     display: block;
     text-align: center;
@@ -126,9 +129,17 @@ body {
 
 /* navbar */
 
+.header-wrapper {
+    background: #fff;
+}
+
 .navbar-default {
     background-color: #fff !important;
     border: 0px solid black !important;
+}
+
+.navbar-inverted {
+    background-color: #000 !important;
 }
 
 .navbar .navbar-nav li {
@@ -146,13 +157,17 @@ body {
 .navbar .navbar-nav li a {
     display: block;
     padding: 4px 5px;
-    font-family: 'neutra_text_demi';
+    font-family: Arial;
     font-weight: bold;
     color: #000000;
     font-size: 0.9em;
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.navbar-inverted .navbar-nav li a {
+    color: #fff;
 }
 
 .navbar .navbar-nav li a:hover,
@@ -387,6 +402,7 @@ body {
 }
 
 /* content */
+
 .media {}
 
 .media figcaption {
@@ -405,9 +421,9 @@ body {
 #dropcap {
     font-family: minion_italic;
     float: left;
-    font-size: 68px;
-    line-height: 45px;
-    padding-top: 4px;
-    padding-right: 8px;
+    font-size: 5em;
+    line-height: 83px;
+    padding-top: 7px;
+    padding-right: 14px;
     padding-left: 3px;
 }
