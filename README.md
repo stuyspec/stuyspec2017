@@ -1,5 +1,6 @@
 # Stuyvesant Spectator Website 2017
 
+minion: http://fontsgeek.com/search?q=minion+pro
 
 ## Standard dependency workflow
 *Do NOT check dependencies into the repo*
