@@ -13,14 +13,11 @@ TABLE OF CONTENTS
 
 4.) article
 - header
-<<<<<<< HEAD
 - article body
 - footer
-*/
-=======
 - featured img
 - content
->>>>>>> charlie_wilson
+*/
 
 /*---------- 1.) typography ----------*/
 
@@ -46,36 +43,23 @@ TABLE OF CONTENTS
 }
 
 @font-face {
-<<<<<<< HEAD
-    font-family: 'cheltenham_bold';
-    src: url('../fonts/Cheltenham_Bold.ttf');
-    font-weight: bold;
-=======
     font-family: 'minion_italic';
     src: url('../fonts/Minion_Pro_Italic.ttf');
     font-weight: normal;
->>>>>>> charlie_wilson
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
-<<<<<<< HEAD
-    font-family: 'cheltenham_bolditalic';
-    src: url('../fonts/Cheltenham_BoldItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
-=======
     font-family: 'minion_bold';
     src: url('../fonts/Minion_Pro_Bold.ttf');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
->>>>>>> charlie_wilson
 }
 
 @font-face {
     font-family: 'minion_bolditalic';
     src: url('../fonts/Minion_Pro_BoldItalic.ttf');
-    font-weight: normal;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -452,5 +436,4 @@ body {
     padding-top: 7px;
     padding-right: 14px;
     padding-left: 3px;
->>>>>>> charlie_wilson
 }

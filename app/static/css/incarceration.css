@@ -1,0 +1,36 @@
+.content {
+    width: 100%;
+}
+
+#main-color-wrap {
+    margin: 0 auto;
+    height: 100vh;
+    background: rgb(237, 28, 36);
+    position: relative;
+    z-index: 1000;
+}
+
+#main-color-wrap #article-header {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-color-wrap #article-header .article-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 52px;
+    line-height: 68px;
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+#main-color-wrap #article-header .article-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    margin: 0px 90px 25px 90px;
+}
