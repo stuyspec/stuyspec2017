@@ -2,6 +2,13 @@ from flask import render_template
 from app import app, db, models
 import datetime
 
+"""
+navbar:
+0=default
+1=collapsed
+2=shade
+"""
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -57,35 +64,42 @@ def index():
     ]
     return render_template("index.html",
                            title="Stuyvesant Spectator",
+                           navbar=0,
                            posts=posts)
 
 
 @app.route('/article')
 def article():
     return render_template("article.html",
-                           title="Article")
+                           title="Article",
+                           navbar=1)
 
 @app.route('/l_train')
 def l_train():
     return render_template("l_train.html",
-                           title="L Train")
+                           title="L Train",
+                           navbar=2)
 
 @app.route('/the_week')
 def the_week():
     return render_template("the_week.html",
-                           title="The Week")
+                           title="The Week",
+                           navbar=2)
 
 @app.route('/goings_on')
 def goings_on():
     return render_template("goings_on.html",
-                           title="Goings On")
+                           title="Goings On",
+                           navbar=1)
 
 @app.route('/antarctica')
 def antarctica():
     return render_template("antarctica.html",
-                           title="Antarctica")
+                           title="Antarctica",
+                           navbar=2)
 
 @app.route('/incarceration')
 def incarceration():
     return render_template("incarceration.html",
-                           title="Incarceration")
+                           title="Incarceration",
+                           navbar=1)

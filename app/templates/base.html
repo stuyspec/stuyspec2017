@@ -31,11 +31,14 @@
 
                 <section class="logo-container">
 
+                {% if navbar == 0 %}
                 <div id="logo">
                     <a href="http://www.stuyspec.com/">
                         <h1>Spectator</h1>
                     </a>
                 </div>
+                {% else %}
+                {% endif %}
 
                 {%
                 set navigation_bar = [
@@ -52,7 +55,10 @@
                 ]
                 %}
 
-                <nav class="navbar navbar-default fixme" id="mainNav">
+                <nav class="navbar navbar-default fixme
+                            "
+                     id="mainNav"
+                     data-nav-type={{ navbar }}>
 
                     <div class="container-fluid">
 
@@ -68,6 +74,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
+
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 {% for href, caption, permission in navigation_bar %}
@@ -122,6 +129,7 @@
                                 {% endif %}
                                 {% endfor %}
                                 #}
+
                             </ul>
                         </div>
                     </div>
