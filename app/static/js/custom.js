@@ -12,6 +12,10 @@ $(document).ready(function() {
         $('.content').css('margin-top', $('.navbar').height());
     }
 
+    if (navType == '3') {
+        $('.content').css('margin-top', $('.navbar').height());
+    }
+
     $(window).scroll(function() {
 
         var currentScroll = $(window).scrollTop();

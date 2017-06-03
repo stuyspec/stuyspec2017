@@ -103,3 +103,9 @@ def incarceration():
     return render_template("incarceration.html",
                            title="Incarceration",
                            navbar=1)
+
+@app.route('/fat_text')
+def fat_text():
+    return render_template("fat_text.html",
+                           title="Fat Text",
+                           navbar=3)
