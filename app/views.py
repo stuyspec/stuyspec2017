@@ -83,13 +83,13 @@ def l_train():
 @app.route('/the_week')
 def the_week():
     return render_template("the_week.html",
-                           title="The Week",
+                           title="9/11",
                            navbar=2)
 
 @app.route('/goings_on')
 def goings_on():
     return render_template("goings_on.html",
-                           title="Goings On",
+                           title="Not doing this",
                            navbar=1)
 
 @app.route('/antarctica')
@@ -98,14 +98,18 @@ def antarctica():
                            title="Antarctica",
                            navbar=2)
 
-@app.route('/incarceration')
-def incarceration():
-    return render_template("incarceration.html",
-                           title="Incarceration",
-                           navbar=1)
-
 @app.route('/fat_text')
 def fat_text():
     return render_template("fat_text.html",
-                           title="Fat Text",
+                           title="Thesis & Background",
                            navbar=3)
+
+@app.route('/tall_text')
+def tall_text():
+    return render_template("tall_text.html",
+                           title="Charlie Did It")
+
+@app.route('/incarceration')
+def incarceration():
+    return render_template("incarceration.html",
+                           title="Charlie Did It")

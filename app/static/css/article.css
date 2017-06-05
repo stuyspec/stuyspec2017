@@ -1,0 +1,327 @@
+/*
+
+ARTICLE CSS: TABLE OF CONTENTS
+
+1.) standard text
+- header
+- article body
+- footer
+- featured img
+- content
+
+2.) centered text
+
+3.) fat text
+
+4.) tall text
+
+5.) feed rail
+*/
+
+/*---------- 1.) article ----------*/
+
+/* sizes */
+
+#article-header,
+#article-footer {
+    display: block;
+    min-height: 40px;
+}
+
+/* header */
+#article-header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#article-header li {
+    float: left;
+}
+
+#article-header li a {
+    display: block;
+    padding: 8px;
+}
+
+/* layout */
+#content-wrap {
+    overflow: hidden;
+}
+
+#right-rail {
+    float: right;
+    width: 40%;
+}
+
+#content-wrap {
+    float: left;
+    width: 60%;
+}
+
+/* featured img */
+#featured-img {
+    display: block;
+    font-family: minion_reg;
+}
+
+#featured-img img {
+    width: 100%;
+}
+
+#featured-img figcaption {
+    margin-top: 6px;
+    line-height: 16px;
+}
+
+#featured-img figcaption #caption {
+    font-size: 14px;
+}
+
+#featured-img figcaption #credit {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* content */
+
+.media {}
+
+.media figcaption {
+    font-size: 16px;
+    font-family: minion_reg;
+    color: #555;
+}
+
+#content-wrap .article-content {
+    font-family: minion_reg;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 30px;
+}
+
+#dropcap {
+    font-family: minion_italic;
+    float: left;
+    font-size: 5em;
+    line-height: 83px;
+    padding-top: 7px;
+    padding-right: 14px;
+    padding-left: 3px;
+}
+
+/*---------- 2.) Centered Text ----------*/
+
+#main-centered-wrap {
+    font-family: minion_reg;
+}
+
+#main-centered-wrap #article-header .article-title {
+    display: block;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#main-centered-wrap #article-header .article-title p {
+    display: inline;
+}
+
+#main-centered-wrap #article-header .author {
+    text-align: center;
+    font-family: minion_italic;
+    font-size: 22px;
+    line-height: 30px;
+    color: #999;
+}
+
+#main-centered-wrap .top-image {
+    width: 100%;
+}
+
+#main-centered-wrap .top-image .lazy {
+    width: 100%;
+}
+
+#main-centered-wrap .top-image .img-credit {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-top: 3px;
+    margin-right: 10px;
+    font-family: "neutra_text_demi";
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+}
+
+#main-centered-wrap #article-body {
+    width: 100%;
+}
+
+#main-centered-wrap #article-body #content-wrap {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    float: none !important;
+}
+
+/*---------- 3.) Fat Text ----------*/
+
+
+#fat-text-wrap {
+    display: block;
+    width: 125%;
+    margin-left: -12.5%;
+}
+
+#fat-text-wrap #article-header {
+    width: 80%;
+    margin: 160px auto 80px auto;
+    text-align: center;
+    color: #df3331;
+    position: relative;
+
+}
+
+#fat-text-wrap #article-header .article-title {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#fat-text-wrap #article-header .article-title p {
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#fat-text-wrap #article-header p::selection {
+    background: #df3331; /* WebKit/Blink Browsers */
+    color: #fff;
+}
+
+#fat-text-wrap #article-header p::-moz-selection {
+    background: #df3331; /* Gecko Browsers */
+    color: #fff;
+}
+
+#fat-text-wrap #article-header .author {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+#fat-text-wrap #article-body #content-wrap {
+    float: none;
+    margin: 0 auto;
+}
+
+/*---------- 4.) Tall Text ----------*/
+
+#tall-text-wrap {
+    display: block;
+    width: 125%;
+    margin-left: -12.5%;
+}
+
+#tall-text-wrap #article-header {
+    width: 80%;
+    margin: 100px auto 0px auto;
+    text-align: center;
+    color: #000;
+    position: relative;
+
+}
+
+#tall-text-wrap #article-header .article-title {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-size: 120px;
+    line-height: 140px;
+    text-align: center;
+}
+
+#tall-text-wrap #article-header .article-title p::selection {
+    background: #000; /* WebKit/Blink Browsers */
+    color: #fff;
+}
+
+#tall-text-wrap #article-header .article-title p::-moz-selection {
+    background: #000; /* Gecko Browsers */
+    color: #fff;
+}
+
+#tall-text-wrap #article-header .author {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: minion_italic
+}
+
+#tall-text-wrap #article-body #content-wrap {
+    float: none;
+    margin: 0 auto;
+}
+
+/*---------- 5.) feed rail ----------*/
+
+#feed-rail {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 40px; /* navbar fixed */
+}
+
+#feed-rail .feed-item {
+    display: flex;
+    margin: 40px auto;
+    background-color: #fff;
+}
+
+#feed-rail .feed-item .feed-text-container {
+    padding: 30px;
+}
+
+#feed-rail .feed-item .feed-text-container .feed-item-section {
+    font-family: neutra_text_demi;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+#feed-rail .feed-item .feed-text-container .feed-item-title {
+    font-family: minion_bolditalic;
+    font-size: 44px;
+    margin: 15px 0px 10px 0px;
+}
+
+#feed-rail .feed-item .feed-text-container .feed-item-content {
+    font-size: 18px;
+}
+
+#feed-rail .feed-item .feed-text-container .byline {
+    font-size: 18px;
+    font-family: minion_italic;
+}
+
+#feed-rail .feed-item .feed-image-container img {
+    width: 100%;
+}
+
+#feed-rail .portrait {
+    flex-direction: row;
+    align-items: center;
+}
+
+#feed-rail .portrait .feed-image-container {
+    flex: 1;
+}
+
+#feed-rail .portrait .feed-text-container {
+    flex: 1;
+}
+
+#feed-rail .landscape {
+    flex-direction: column;
+}

@@ -5,7 +5,7 @@
 }
 
 #fat-text-wrap #article-header {
-    width: 60%;
+    width: 80%;
     margin: 160px auto 80px auto;
     text-align: center;
     color: #df3331;
@@ -23,15 +23,14 @@
     font-size: 90px;
     line-height: 100px;
     text-align: center;
-    text-decoration: underline;
 }
 
-#article-header p::selection {
+#fat-text-wrap #article-header p::selection {
     background: #df3331; /* WebKit/Blink Browsers */
     color: #fff;
 }
 
-#article-header p::-moz-selection {
+#fat-text-wrap #article-header p::-moz-selection {
     background: #df3331; /* Gecko Browsers */
     color: #fff;
 }

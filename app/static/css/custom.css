@@ -1,6 +1,6 @@
 /*
 
-TABLE OF CONTENTS
+BASE CSS: TABLE OF CONTENTS
 
 1.) typography
 
@@ -11,19 +11,20 @@ TABLE OF CONTENTS
 - navbar
 - footer
 
-4.) article
-- header
-- article body
-- footer
-- featured img
-- content
 */
 
 /*---------- 1.) typography ----------*/
 
 @font-face {
-    font-family: 'neutra_text_demi';
+    font-family: 'neutra_text_light';
     src: url('../fonts/neutra_text_tf_light_demi.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutra_text_demi';
+    src: url('../fonts/neutra_text_tf_demi.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -344,96 +345,4 @@ body {
         height: 3px;
         border-radius: 0;
     }
-}
-
-/*---------- 4.) article ----------*/
-
-/* sizes */
-
-#article-header,
-#article-footer {
-    display: block;
-    min-height: 40px;
-}
-
-/* header */
-#article-header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#article-header li {
-    float: left;
-}
-
-#article-header li a {
-    display: block;
-    padding: 8px;
-}
-
-/* layout */
-#content-wrap {
-    overflow: hidden;
-}
-
-#right-rail {
-    float: right;
-    width: 40%;
-}
-
-#content-wrap {
-    float: left;
-    width: 60%;
-}
-
-/* featured img */
-#featured-img {
-    display: block;
-    font-family: minion_reg;
-}
-
-#featured-img img {
-    width: 100%;
-}
-
-#featured-img figcaption {
-    margin-top: 6px;
-    line-height: 16px;
-}
-
-#featured-img figcaption #caption {
-    font-size: 14px;
-}
-
-#featured-img figcaption #credit {
-    font-size: 13px;
-    color: #aaa;
-}
-
-/* content */
-
-.media {}
-
-.media figcaption {
-    font-size: 16px;
-    font-family: minion_reg;
-    color: #555;
-}
-
-#content-wrap .article-content {
-    font-family: minion_reg;
-    font-size: 20px;
-    margin-top: 24px;
-    line-height: 30px;
-}
-
-#dropcap {
-    font-family: minion_italic;
-    float: left;
-    font-size: 5em;
-    line-height: 83px;
-    padding-top: 7px;
-    padding-right: 14px;
-    padding-left: 3px;
 }

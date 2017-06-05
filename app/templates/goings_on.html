@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/goings_on.css') }}">
+<style>
+ body {
+     background-color: #212121;
+     }
+</style>
 
-<div class="feed-rail">
+<div id="feed-rail">
 
     <article class="feed-item portrait">
         <div class="feed-image-container">

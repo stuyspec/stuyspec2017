@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div id="fat-text-wrap">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tall_text.css') }}">
+
+<div id="tall-text-wrap">
 
     <div id="article-header">
 
         <div class="article-title">
-            <p>Although Charlie Wilson ate a lot of salad, his large intestine looks like a gooky piece of hihi.</p>
+            <p>Charlie Did It.</p>
         </div>
 
         <div class="author">
-            <p>Charlie Wilson<br>is dumb cool.</p>
+            <p>The story of the greatest Congressman.</p>
         </div>
 
     </div>
@@ -24,6 +26,11 @@
             <p class="article-content">
                 His is the brand that Trump has created for himself—that of an unprincipled, cocky, value-free con who will insult, stiff, or betray anyone to achieve his gaudiest purposes. “I am what I am,” he has said.
             </p>
+            <blockquote class="article-quote">
+                <p class="large person1">“How much are we giving the Afghans?” asked Wilson.</p>
+                <p class="large person2">“Five million,” said the staffer.</p>
+                <p class="large person1">“Double it.”</p>
+            </blockquote>
             <p class="article-content">But what was once a parochial amusement is now a national and global peril. Trump flouts truth and liberal values so brazenly that he undermines the country he has been elected to serve and the stability he is pledged to insure. His bluster creates a generalized anxiety such that the President of the United States can appear to be scarcely more reliable than any of the world’s autocrats.
             </p>
             <p class="article-content">
