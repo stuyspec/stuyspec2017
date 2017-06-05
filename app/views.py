@@ -74,22 +74,16 @@ def article():
                            title="Article",
                            navbar=1)
 
-@app.route('/l_train')
-def l_train():
-    return render_template("l_train.html",
-                           title="L Train",
-                           navbar=2)
-
 @app.route('/the_week')
 def the_week():
     return render_template("the_week.html",
                            title="9/11",
                            navbar=2)
 
-@app.route('/goings_on')
+@app.route('/feed_rail')
 def goings_on():
-    return render_template("goings_on.html",
-                           title="Not doing this",
+    return render_template("feed_rail.html",
+                           title="Feed Rail",
                            navbar=1)
 
 @app.route('/antarctica')
@@ -107,9 +101,4 @@ def fat_text():
 @app.route('/tall_text')
 def tall_text():
     return render_template("tall_text.html",
-                           title="Charlie Did It")
-
-@app.route('/incarceration')
-def incarceration():
-    return render_template("incarceration.html",
                            title="Charlie Did It")
