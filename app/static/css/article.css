@@ -26,6 +26,10 @@ ARTICLE CSS: TABLE OF CONTENTS:
     overflow: visible !important;
 }
 
+#content-wrap figure {
+    margin-right: 23px;
+}
+
 #content-wrap figure.alignright {
     float: right;
 }
@@ -170,7 +174,7 @@ ARTICLE CSS: TABLE OF CONTENTS:
     line-height: 30px;
 }
 
-#dropcap {
+dc {
     font-family: minion_italic;
     float: left;
     font-size: 5em;
