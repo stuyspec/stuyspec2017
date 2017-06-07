@@ -92,6 +92,35 @@ ARTICLE CSS: TABLE OF CONTENTS:
     font-size: 16px;
 }
 
+#content-wrap .article-quote {
+    font-family: minion_bold;
+    font-size: 30px;
+    line-height: 48px;
+    border: none;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#content-wrap .article-quote .person1 {
+    color: #f47862;
+}
+
+#content-wrap .article-quote .person2 {
+    color: #0c4b4a;
+}
+
+#content-wrap .article-outquote {
+    font-family: minion_bold;
+    border-left: none;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin: 25px auto;
+}
+
 /*---------- 2.) article ----------*/
 
 /* sizes */
@@ -339,22 +368,7 @@ dc {
     margin: 0 auto;
 }
 
-#tall-text-wrap #article-body #content-wrap .article-quote {
-    font-family: minion_bold;
-    font-size: 30px;
-    line-height: 48px;
-    border: none;
-    text-align: center;
-    margin: 50px 0px;
-}
 
-#tall-text-wrap #article-body #content-wrap .article-quote .person1 {
-    color: #f47862;
-}
-
-#tall-text-wrap #article-body #content-wrap .article-quote .person2 {
-    color: #0c4b4a;
-}
 
 /*---------- 6.) feed rail ----------*/
 

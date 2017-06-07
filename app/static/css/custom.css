@@ -346,3 +346,50 @@ body {
         border-radius: 0;
     }
 }
+
+
+#audio-players .audioplayer {
+	  width: 480px;
+	  height: 60px;
+	  margin: 0 auto;
+	  border: solid;
+}
+
+#audio-players .audioplayer .playbutton {
+	  height: 60px;
+	  width: 60px;
+	  border: none;
+	  float: left;
+	  outline: none;
+}
+
+#audio-players .play {
+	  background: url('http://www.alexkatz.me/codepen/img/play.png');
+}
+
+#audio-players .pause {
+	  background: url('http://www.alexkatz.me/codepen/img/pause.png');
+}
+
+#audio-players .play,
+#audio-players .pause {
+	  background-size: 50% 50%;
+	  background-repeat: no-repeat;
+	  background-position: center;
+}
+
+#audio-players .timeline {
+	  width: 400px;
+	  height: 20px;
+	  margin-top: 20px;
+	  float: left;
+	  border-bottom: 3px solid #555;
+}
+
+#audio-players .playhead {
+	  height: 18px;
+    width: .00001px;
+	  margin-top: 1px;
+	  background: rgba(0, 0, 0, 1);
+	  cursor: pointer;
+}
