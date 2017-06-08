@@ -208,7 +208,7 @@ function getPosition(el) {
  * create audio elements for each file in files */
 function createAudioElements() {
 	for (f in files) {
-		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=\"../static/audio/" + files[f] + "\"></audio>";
+		var audioString = "<audio id=\"audio-" + f + "\" class=\"audio\" preload=\"true\"><source src=\"../static/media/audio/" + files[f] + "\"></audio>";
 		$("#audio-players").append(audioString);
 	}
 }
