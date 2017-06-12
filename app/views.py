@@ -22,7 +22,8 @@ def index():
 def article():
     return render_template("article.html",
                            title="Article",
-                           navbar=1)
+                           navbar=1,
+                           article=models.Article.query.get(0))
 
 @app.route('/the_week')
 def the_week():

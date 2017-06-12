@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- ARTICLE-HEADER (start) -->
+<!-- ARTICLE-HEADER (start) 
 
 <style>
  .top-article-header {
@@ -42,7 +42,7 @@
  }
 </style>
 		  <div class="top-article-header">
-		      <p class="category">
+		      <p class="department">
 			        Politics
 		      </p>
 		      <p class="big-title">
@@ -59,6 +59,23 @@
 		  </div>
 
 <br>
+-->
+<div id="article-header">
+    <p id="department">Opinion</p>
+    <p class="big-title">
+        {{ article.title }}
+    </p>
+    <ul id="navbar-article">
+        <li class="alignleft" id="author">By <a href="">\{\{article.user\}\}</span></a></li>
+        <li class="alignleft" id="timestamp">June 6, 2017 {{ timestamp }}</a></li>
+        <li class="alignright" id="social-media">
+            <i class="fa fa-facebook fa-2x">F</i>
+            <i class="fa fa=twitter fa-2x">T</i>
+        </li>
+    </ul>
+</div>
+
+<br><br><br>
 
 <!-- ARTICLE-CONTENT -->
 <div id="article-body">

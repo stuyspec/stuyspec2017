@@ -3,8 +3,7 @@
 ARTICLE CSS: TABLE OF CONTENTS:
 
 1.) default styles
-
-2.) standard text
+- media
 - header
 - article body
 - footer
@@ -107,7 +106,7 @@ ARTICLE CSS: TABLE OF CONTENTS:
     color: #565656;
 }
 
-#content-wrap .article-quote {
+#content-wrap blockquote.article-quote {
     font-family: minion_bold;
     font-size: 30px;
     line-height: 48px;
@@ -116,15 +115,15 @@ ARTICLE CSS: TABLE OF CONTENTS:
     margin: 50px 0px;
 }
 
-#content-wrap .article-quote .person1 {
+#content-wrap blockquote.article-quote .person1 {
     color: #f47862;
 }
 
-#content-wrap .article-quote .person2 {
+#content-wrap blockquote.article-quote .person2 {
     color: #0c4b4a;
 }
 
-#content-wrap .article-outquote {
+#content-wrap blockquote.article-outquote {
     font-family: minion_bold;
     border-left: none;
     border-top: 5px solid #000;
@@ -141,11 +140,9 @@ ARTICLE CSS: TABLE OF CONTENTS:
     margin: 0 auto;
 }
 
-#content-wrap video {
+#content-wrap figure.video-centered video {
     width: 100%;
 }
-
-/*---------- 2.) article ----------*/
 
 /* sizes */
 
@@ -156,19 +153,29 @@ ARTICLE CSS: TABLE OF CONTENTS:
 }
 
 /* header */
-#article-header {
+#article-header #department {
+    color: #df3331;
+}
+
+#article-header
+
+#article-header #navbar-article {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border: 1px solid #000;
 }
 
-#article-header li {
+#article-header #navbar-article li {
+    padding: 8px;
+}
+
+#article-header #navbar-article li.alignleft {
     float: left;
 }
 
-#article-header li a {
-    display: block;
-    padding: 8px;
+#article-header #navbar-article li.alignright {
+    float: right;
 }
 
 /* layout */
@@ -237,7 +244,7 @@ ARTICLE CSS: TABLE OF CONTENTS:
     font-size: 28px;
 }
 
-dc {
+dc { /* dropcap */
     font-family: minion_italic;
     float: left;
     font-size: 5em;
