@@ -26,7 +26,7 @@ ARTICLE CSS: TABLE OF CONTENTS:
 }
 
 #content-wrap figure {
-    margin-right: 23px;
+    margin: 20px 0px 15px 10px;
 }
 
 #content-wrap figure.alignright {
@@ -34,10 +34,6 @@ ARTICLE CSS: TABLE OF CONTENTS:
 }
 #content-wrap figure.alignleft {
     float: left;
-}
-
-#content-wrap figure img {
-    margin: 20px 0px 15px 10px;
 }
 
 #content-wrap figure.size-lg {
@@ -145,26 +141,83 @@ ARTICLE CSS: TABLE OF CONTENTS:
 }
 
 /* sizes */
-
-#article-header {
-    margin-top: 51px;
-}
-
 #article-header,
 #article-footer {
     display: block;
     min-height: 40px;
 }
 
-/* header */
 #article-header #department {
     color: #df3331;
 }
 
+/* layout */
+#content-wrap {
+    overflow: hidden;
+}
+
+#content-wrap {
+    float: left;
+    width: 66%;
+}
+
+/* featured img */
+figure#featured-img {
+    display: block;
+    font-family: minion_reg;
+    margin: 10px 0px 0px 0px;
+}
+
+figure#featured-img img {
+    width: 100%;
+}
+
+figure#featured-img figcaption {
+    line-height: 16px;
+    text-align: left !important;
+    margin-top: 8px;
+}
+
+#featured-img figcaption #caption {
+    font-size: 14px;
+    font-family: minion_reg;
+}
+
+#featured-img figcaption #credit {
+    font-size: 14px;
+    color: #999;
+}
+
+.media figcaption {
+    font-size: 16px;
+    font-family: minion_reg;
+    color: #555;
+}
+
+#content-wrap .article-content {
+    font-family: minion_reg;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 30px;
+}
+
+dc { /* dropcap */
+    font-family: minion_italic;
+    float: left;
+    font-size: 5em;
+    line-height: 83px;
+    padding-top: 7px;
+    padding-right: 14px;
+    padding-left: 3px;
+}
+
+/*---------- 2.) main article ----------*/
+
+
 #main-text-wrap #article-header {
-    margin: 80px 0px 10px 0px;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #cecece;
+    margin: 120px 0px 30px 0px;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 #main-text-wrap #article-header #section {
@@ -186,88 +239,26 @@ ARTICLE CSS: TABLE OF CONTENTS:
 
 #main-text-wrap #article-header #article-meta-footer .byline-dateline span:first-child {
     font-family: neutra_text_bold;
+    margin-right: 10px;
 }
 
 #main-text-wrap #article-header #article-meta-footer .byline-dateline span:last-child {
     font-family: neutra_text_demi;
 }
 
-/* layout */
-#content-wrap {
-    overflow: hidden;
-}
-
-#right-rail {
+#main-text-wrap #article-body #right-rail {
     float: right;
     width: 33%;
 }
 
-#content-wrap {
-    float: left;
-    width: 66%;
-}
-
-/* featured img */
-#featured-img {
-    display: block;
-    font-family: minion_reg;
-}
-
-#featured-img img {
+#main-text-wrap #article-body #right-rail figure.ad {
+    text-align: center;
     width: 100%;
 }
 
-#featured-img figcaption {
-    line-height: 16px;
-    text-align: left !important;
-    margin-left: 20px;
-}
-
-#featured-img figcaption #caption {
-    font-size: 14px;
-    font-family: minion_reg;
-}
-
-#featured-img figcaption #credit {
-    font-size: 14px;
-    color: #999;
-}
-
-/* content */
-
-.media {}
-
-.media figcaption {
-    font-size: 16px;
-    font-family: minion_reg;
-    color: #555;
-}
-
-#content-wrap .article-content {
-    font-family: minion_reg;
-    font-size: 20px;
-    margin-top: 24px;
-    line-height: 30px;
-}
-
-#content-wrap .article-section-header {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: minion_bold;
-}
-
-#content-wrap .article-section-header::first-letter {
-    font-size: 28px;
-}
-
-dc { /* dropcap */
-    font-family: minion_italic;
-    float: left;
-    font-size: 5em;
-    line-height: 83px;
-    padding-top: 7px;
-    padding-right: 14px;
-    padding-left: 3px;
+#main-text-wrap #article-body #right-rail figure.ad img {
+    width: 90%;
+    margin: 20px 0px;
 }
 
 /*---------- 3.) Centered Text ----------*/
