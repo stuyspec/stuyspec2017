@@ -196,7 +196,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    /* the following line of code removes text blur under the box shadow, credits to nyr. */
+    /* the following line of code removes text blur under the box shadow, credits to newyorker.com */
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
                 0 -5px 3px -10px #fff;
 }

@@ -14,7 +14,7 @@ navbar:
 def index():
     return render_template("index.html",
                            title="Stuyvesant Spectator",
-                           navbar=0,
+                           navType=0,
                            articles=models.Article.query.all())
 
 
@@ -22,7 +22,7 @@ def index():
 def article():
     return render_template("article.html",
                            title="Article",
-                           navbar=1,
+                           navType=1,
                            article=models.Article.query.get(2))
 
 

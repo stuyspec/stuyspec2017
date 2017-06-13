@@ -32,7 +32,7 @@
 
                 <section class="logo-container">
 
-                {% if navbar == 0 %}
+                {% if navType == 0 %}
                 <div id="logo">
                     <a href="http://www.stuyspec.com/">
                         <h1>Spectator</h1>
@@ -56,19 +56,12 @@
                 ]
                 %}
 
-                <nav class="navbar navbar-default fixme
-                            "
+                <nav class="navbar navbar-default fixme"
                      id="mainNav"
-                     data-nav-type={{ navbar }}>
+                     data-nav-type="{{ navType }}">
 
                     <div class="container-fluid">
 
-                        <div class="navbar-header">
-                            <div id="logo">
-                                <a href="/">
-                                    <h1>Spectator</h1>
-                                </a>
-                            </div>
                             <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>

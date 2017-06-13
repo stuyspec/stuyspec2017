@@ -261,6 +261,20 @@ dc { /* dropcap */
     margin: 20px 0px;
 }
 
+#main-text-wrap #article-body #right-rail h3 {
+    position: relative;
+    left: 18px;
+}
+
+#main-text-wrap #article-body #article-footer {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+}
+
+#main-text-wrap #article-body #article-footer .author-description {
+    font-family: minion_italic;
+}
+
 /*---------- 3.) Centered Text ----------*/
 
 #main-centered-wrap {
