@@ -23,32 +23,33 @@ def article():
     return render_template("article.html",
                            title="Article",
                            navbar=1,
-                           article=models.Article.query.get(0))
+                           article=models.Article.query.get(2))
+
+
+
+
+
 
 @app.route('/the_week')
 def the_week():
     return render_template("the_week.html",
                            title="9/11",
                            navbar=2)
-
 @app.route('/feed_rail')
 def goings_on():
     return render_template("feed_rail.html",
                            title="Feed Rail",
                            navbar=1)
-
 @app.route('/antarctica')
 def antarctica():
     return render_template("antarctica.html",
                            title="Antarctica",
                            navbar=2)
-
 @app.route('/fat_text')
 def fat_text():
     return render_template("fat_text.html",
                            title="Thesis & Background",
                            navbar=3)
-
 @app.route('/tall_text')
 def tall_text():
     return render_template("tall_text.html",

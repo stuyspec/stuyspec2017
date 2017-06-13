@@ -1,83 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- ARTICLE-HEADER (start) 
+<div id="main-text-wrap">
 
-<style>
- .top-article-header {
-		 bottom: 5px;
- }
- p.category {
-		 text-transform: uppercase;
-		 font-family: "neutra_text_demi";
- }
- p.big-title {
-		 font-family: "cheltenham_bolditalic";
-		 width: 75%;
-		 font-size: 38px; 
- }
- .bottom-article-header ul{
-		 list-style: none;
-		 overflow: hidden;
-		 position: fixed;
-		 width: 100%;
-		 margin-top: 5px;
-		 margin-bottom: 5px;
-		 padding-top: 10px;
-		 padding-bottom: 10px;
-		 display: inline;
-		 border-bottom: 1px solid gray;
-		 border-top: 1px solid gray;
- }
- li.li-floatleft {
-		 float: left;
-		 padding-left: 10px;
-		 left: 0;
- }
- li.li-floatright {
-		 float: right;
-		 margin: 5px;
-		 padding-right: 15px;
-		 text-align:center;
- }
-</style>
-		  <div class="top-article-header">
-		      <p class="department">
-			        Politics
-		      </p>
-		      <p class="big-title">
-			        Trump's Tax Plan Is a Reckoning for Republican Deficit Hawks
-		      </p>
-		  </div>
-		  <div class="bottom-article-header">
-			    <ul>
-				      <li class="li-floatleft">By <strong>Author's Name</strong></li>
-				      <li class="li-floatleft">June 7, 2017</li>
-				      <li class="li-floatright"><a href="http://facebook.com/"><i class="fa fa-facebook fa-2x"></i></a></li>
-				      <li class="li-floatright"><a href="http://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a></li>
-			    </ul>
-		  </div>
-
-<br>
--->
 <div id="article-header">
-    <p id="department">Opinion</p>
-    <p class="big-title">
+
+    <h3 id="section">{{ article.section }}</h3>
+    <p id="big-title">
         {{ article.title }}
     </p>
-    <ul id="navbar-article">
-        <li class="alignleft" id="author">By <a href="">\{\{article.user\}\}</span></a></li>
-        <li class="alignleft" id="timestamp">June 6, 2017 {{ timestamp }}</a></li>
-        <li class="alignright" id="social-media">
-            <i class="fa fa-facebook fa-2x">F</i>
-            <i class="fa fa=twitter fa-2x">T</i>
-        </li>
-    </ul>
+    <div id="article-meta-footer">
+        <p class="byline-dateline">
+            <span>By Jason Kao</span>
+            <span>{{ article.timestamp.strftime('%B %d, %Y') }}</span>
+        </p>
+    </div>
 </div>
 
-<br><br><br>
-
-<!-- ARTICLE-CONTENT -->
 <div id="article-body">
 
     <div id="content-wrap">
@@ -86,17 +25,19 @@
             <img src="http://media.salon.com/2017/01/obama-goodbye.jpg" alt="President Obama">
             <figcaption>
                 <span id="caption">Jeannette Walls is a sad character. Growing up in Welch, West Virginia, she only knew poverty. It is not until her thirty-third year of life that she began earning money at the New York Times.</span>
-                <br>
-                <span id="credit">Jeannette Walls</span>
+                <span id="credit">Photo by Jeannette Walls</span>
             </figcaption>
         </figure>
 
         <p class="article-content">
-            <span id="dropcap">T</span>his is the brand that Trump has created for himself—that of an unprincipled, cocky, value-free con who will insult, stiff, or betray anyone to achieve his gaudiest purposes. “I am what I am,” he has said. But what was once a parochial amusement is now a national and global peril. Trump flouts truth and liberal values so brazenly that he undermines the country he has been elected to serve and the stability he is pledged to insure. His bluster creates a generalized anxiety such that the President of the United States can appear to be scarcely more reliable than any of the world’s autocrats.
+            <dc>O</dc>n Monday evening, this season’s free production of Shakespeare in the Park’s “Julius Caesar” will open to an unusual quantity of attention. As audiences beyond the Delacorte Theatre have already heard, the production, which is directed by Oskar Eustis, the longtime artistic director of the Public Theatre, presents Shakespeare’s interpretation of Roman history as a contemporary parable. The setting is one of political upheaval and extreme civil unrest. At the play’s opening, protesters dressed in costumes that suggest contemporary activists ranging from Black Lives Matter to Anonymous plaster political posters on the walls; Caesar, the ascendant leader of the Roman Republic, is presented as President Trump.
         </p>
-        <p class="article-content">When Kim In-ryong, a representative of North Korea’s radical regime, warns that Trump and his tweets of provocation are creating “a dangerous situation in which a thermonuclear war may break out at any moment,” does one man sound more immediately rational than the other? When Trump rushes to congratulate Recep Tayyip Erdoğan for passing a referendum that bolsters autocratic rule in Turkey—or when a sullen and insulting meeting with Angela Merkel is followed by a swoon session with Abdel Fattah El-Sisi, the military dictator of Egypt—how are the supporters of liberal and democratic values throughout Europe meant to react to American leadership?
+        <p class="article-content">
+            Played by Gregg Henry, this Caesar wears a navy-blue suit and red tie, has a filigree crest of golden hair, and comes bearing a cell phone in stubby fingers. Eustis’s interpretation highlights Caesar’s preening and his pleasure in adulation. At the beginning of the play, he is already the tyrant whose dangerous ascent Brutus and his other over-throwers fear. The effect of watching Caesar-as-Trump is outrageous, comical, and—especially if you number among those for whom the election of this President has felt like an appalling and dangerous swerve into farce—cathartic in its use of satire.
         </p>
-
+        <p class="article-content">
+            What is not played for laughs in this production, however, is Caesar’s death, which comes, as Shakespeare’s text dictates, at the hands of a group of conspirators—and ends with Caesar as a bloodied lump on the floor. It’s this sequence from the play that has made its way, via audience videos taken in previews, to Web sites like the Daily Caller. Over the weekend, the play became a subject of discussion in conservative media and in the Twitter feed of Donald Trump, Jr., who tweeted, “I wonder how much of this ‘art’ is funded by tax payers? . . . when does ‘art’ become political speech & does that change things?”
+        </p>
         <div id="article-footer">
             <img src="https://lh3.googleusercontent.com/dB3Dvgf3VIglusoGJAfpNUAANhTXW8K9mvIsiIPkhJUAbAKGKJcEMPTf0mkSexzLM5o=w300" class="avatar" />
             <p class="author-description">The author of this article is a student at Stuyvesant High School.</p>
@@ -106,8 +47,6 @@
     </div>
 
     <div id="right-rail">
-
-        <img src="https://lh3.googleusercontent.com/dB3Dvgf3VIglusoGJAfpNUAANhTXW8K9mvIsiIPkhJUAbAKGKJcEMPTf0mkSexzLM5o=w300" class="avatar" />
 
     </div>
 

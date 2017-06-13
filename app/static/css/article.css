@@ -146,6 +146,10 @@ ARTICLE CSS: TABLE OF CONTENTS:
 
 /* sizes */
 
+#article-header {
+    margin-top: 51px;
+}
+
 #article-header,
 #article-footer {
     display: block;
@@ -157,25 +161,35 @@ ARTICLE CSS: TABLE OF CONTENTS:
     color: #df3331;
 }
 
-#article-header
-
-#article-header #navbar-article {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #000;
+#main-text-wrap #article-header {
+    margin: 80px 0px 10px 0px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #cecece;
 }
 
-#article-header #navbar-article li {
-    padding: 8px;
+#main-text-wrap #article-header #section {
+    font-family: neutra_text_demi;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
-#article-header #navbar-article li.alignleft {
-    float: left;
+#main-text-wrap #article-header #big-title {
+    font-family: minion_reg;
+    margin: 20px 0px;
+    font-size: 40px;
+    line-height: 44px;
 }
 
-#article-header #navbar-article li.alignright {
-    float: right;
+#main-text-wrap #article-header #article-meta-footer .byline-dateline {
+    font-size: 17px;
+}
+
+#main-text-wrap #article-header #article-meta-footer .byline-dateline span:first-child {
+    font-family: neutra_text_bold;
+}
+
+#main-text-wrap #article-header #article-meta-footer .byline-dateline span:last-child {
+    font-family: neutra_text_demi;
 }
 
 /* layout */
@@ -185,12 +199,12 @@ ARTICLE CSS: TABLE OF CONTENTS:
 
 #right-rail {
     float: right;
-    width: 40%;
+    width: 33%;
 }
 
 #content-wrap {
     float: left;
-    width: 60%;
+    width: 66%;
 }
 
 /* featured img */
@@ -204,17 +218,19 @@ ARTICLE CSS: TABLE OF CONTENTS:
 }
 
 #featured-img figcaption {
-    margin-top: 6px;
     line-height: 16px;
+    text-align: left !important;
+    margin-left: 20px;
 }
 
 #featured-img figcaption #caption {
     font-size: 14px;
+    font-family: minion_reg;
 }
 
 #featured-img figcaption #credit {
-    font-size: 13px;
-    color: #aaa;
+    font-size: 14px;
+    color: #999;
 }
 
 /* content */

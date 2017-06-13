@@ -96,8 +96,8 @@ body {
     padding: 0;
 }
 
-.content {
-    width: 80%;
+#content {
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -285,7 +285,7 @@ body {
         padding: 0;
     }
 
-    .content {
+    #content {
         width: 85%;
         margin: 0 auto;
     }
