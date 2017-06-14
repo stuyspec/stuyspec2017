@@ -21,15 +21,16 @@ $(document).ready(function() {
         var currentScroll = $(window).scrollTop();
 
         if (navType == '0') {
+            console.log(currentScroll - fixmeTop);
             if (currentScroll > fixmeTop)
             {
                 $('.fixme').addClass('fixed-topnav');
-                $('.content').css('margin-top', $('.logo-container').height() + 10);
+                $('#content').css('margin-top', $('.logo-container').height() + 10);
             }
             else
             {
                 $('.fixme').removeClass('fixed-topnav');
-                $('.content').css('margin-top', 0);
+                $('#content').css('margin-top', 0);
             }
         }
     });

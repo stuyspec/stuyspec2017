@@ -15,7 +15,8 @@ def index():
     return render_template("index.html",
                            title="Stuyvesant Spectator",
                            navType=0,
-                           articles=models.Article.query.all())
+                           articles=models.Article.query.all(),
+                           users=models.User.query.all())
 
 
 @app.route('/article')

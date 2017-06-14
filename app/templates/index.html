@@ -11,20 +11,34 @@
     <li><a href="tall_text">Tall Text</a></li>
 </ul>
 
+<h1>Users</h1>
+<hr>
+<ol>
+    {% for user in users %}
+    <li style="font-family:cheltenham_reg;">
+        <p style="font-size: 18px;">{{ user.name }}</p>
+        <p>
+            email: {{ user.email }}<br>
+            user id: {{ user.id }}
+        </p>
+    </li>
+    {% endfor %}
+</ol>
+
 <h1>Articles</h1>
 <hr>
-{% for article in articles %}
-
-<div class="article">
-
-    <h3 style="font-family:cheltenham_reg; text-transform: uppercase"> {{ article.title }}</h3>
-    <p>
-        time: {{ article.timestamp }} <br>
-        articleID: {{ article.id }}
-    </p>
-    <p>{{ article.body }}</p>
-
-</div>
-
-{% endfor %}
+<ol>
+    {% for article in articles %}
+    <li style="font-family:cheltenham_reg;">
+        <p style="font-size: 18px;">{{ article.title }}</p>
+        <p>
+            time: {{ article.timestamp }}<br>
+            articleID: {{ article.id }}
+        </p>
+        <p>
+            body: {{ article.body }}
+        </p>
+    </li>
+    {% endfor %}
+</ol>
 {% endblock %}
