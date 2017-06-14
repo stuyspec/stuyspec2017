@@ -1,6 +1,6 @@
 /*
 
-TABLE OF CONTENTS
+BASE CSS: TABLE OF CONTENTS
 
 1.) typography
 
@@ -16,52 +16,52 @@ TABLE OF CONTENTS
 /*---------- 1.) typography ----------*/
 
 @font-face {
-    font-family: 'neutra_text_bold';
-    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
-    font-weight: normal;
+    font-family: 'neutra_text_light';
+    src: url('../fonts/neutra_text_tf_light_demi.ttf');
+    font-weight: light;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'neutra_text_demi';
-    src: url('../fonts/neutra_text_tf_light_demi.ttf');
+    src: url('../fonts/neutra_text_tf_demi.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'cheltenham_reg';
-    src: url('../fonts/Cheltenham_Regular.ttf');
+    font-family: 'neutra_text_bold';
+    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'minion_reg';
+    src: url('../fonts/Minion_Pro_Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'cheltenham_bold';
-    src: url('../fonts/Cheltenham_Bold.ttf');
+    font-family: 'minion_italic';
+    src: url('../fonts/Minion_Pro_Italic.ttf');
     font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'minion_bold';
+    src: url('../fonts/Minion_Pro_Bold.ttf');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'cheltenham_bolditalic';
-    src: url('../fonts/Cheltenham_BoldItalic.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'adobe_caslon_reg';
-    src: url('../fonts/adobe_caslon_pro_regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'adobe_caslon_italic';
-    src: url('../fonts/adobe_caslon_pro_italic.ttf');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'minion_bolditalic';
+    src: url('../fonts/Minion_Pro_BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
@@ -71,19 +71,33 @@ TABLE OF CONTENTS
     font-style: normal;
 }
 
-/*---------- 2.) default styles ----------*/
+@font-face {
+    font-family: 'goudy_old_reg';
+    src: url('../fonts/Goudy Old Style Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/*---------- 2.) default styles ----------*/
 
 html {
     margin: 0;
 }
 
 body {
-    font-family: cheltenham_reg;
+    font-family: minion_reg;
+    color: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 85%;
+    width: 100%;
+    padding: 0;
+}
+
+#content {
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -98,7 +112,6 @@ body {
 /*---------- 3.) base ----------*/
 
 /* header */
-
 .logo-container {
     display: block;
     text-align: center;
@@ -126,11 +139,18 @@ body {
 
 /* navbar */
 
+.header-wrapper {
+    background: #fff;
+}
+
 .navbar-default {
-    background: none !important;
+    background-color: #fff !important;
     border: 0px solid black !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    z-index: 1000 !important;
+}
+
+.navbar-inverted {
+    background-color: #000 !important;
 }
 
 .navbar .navbar-nav li {
@@ -148,13 +168,17 @@ body {
 .navbar .navbar-nav li a {
     display: block;
     padding: 4px 5px;
-    font-family: 'neutra_text_demi';
+    font-family: Arial;
     font-weight: bold;
     color: #000000;
     font-size: 0.9em;
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.navbar-inverted .navbar-nav li a {
+    color: #fff;
 }
 
 .navbar .navbar-nav li a:hover,
@@ -168,20 +192,36 @@ body {
     display: none;
 }
 
+.fixed-topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* the following line of code removes text blur under the box shadow, credits to newyorker.com */
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                0 -5px 3px -10px #fff;
+}
+
 @media (min-width: 972px) {
 
     /* makes li's inline and centered */
 
+    .navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .navbar .navbar-collapse {
+        padding-top: 6px; /* vertically aligns inner navbar-nav */
         text-align: center;
     }
 
-    .navbar .navbar-nav {
+    .navbar .navbar-collapse .navbar-nav {
         display: inline-block;
         float: none;
     }
 
-    .navbar .navbar-nav li {
+    .navbar .navbar-collapse .navbar-nav li {
         display: inline-block;
     }
 
@@ -245,7 +285,7 @@ body {
         padding: 0;
     }
 
-    .content {
+    #content {
         width: 85%;
         margin: 0 auto;
     }
@@ -254,14 +294,21 @@ body {
         display: none;
     }
 
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* the following line of code removes text blur under the box shadow, credits to nyr. */
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                    0 -5px 3px -10px #fff;
+    }
+
     .navbar-header {
         margin: 0;
     }
 
     .header-wrapper {
         width: 100%;
-        box-shadow: 0px 5px 10px #ddd;
-
     }
 
     .navbar-header .navbar-toggle {
@@ -300,4 +347,49 @@ body {
     }
 }
 
-/* footer */
+
+#audio-players .audioplayer {
+	  width: 480px;
+	  height: 60px;
+	  margin: 0 auto;
+	  border: solid;
+}
+
+#audio-players .audioplayer .playbutton {
+	  height: 60px;
+	  width: 60px;
+	  border: none;
+	  float: left;
+	  outline: none;
+}
+
+#audio-players .play {
+	  background: url('http://www.alexkatz.me/codepen/img/play.png');
+}
+
+#audio-players .pause {
+	  background: url('http://www.alexkatz.me/codepen/img/pause.png');
+}
+
+#audio-players .play,
+#audio-players .pause {
+	  background-size: 50% 50%;
+	  background-repeat: no-repeat;
+	  background-position: center;
+}
+
+#audio-players .timeline {
+	  width: 400px;
+	  height: 20px;
+	  margin-top: 20px;
+	  float: left;
+	  border-bottom: 3px solid #555;
+}
+
+#audio-players .playhead {
+	  height: 18px;
+    width: .00001px;
+	  margin-top: 1px;
+	  background: rgba(0, 0, 0, 1);
+	  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+#tall-text-wrap {
+    display: block;
+    width: 125%;
+    margin-left: -12.5%;
+}
+
+#tall-text-wrap #article-header {
+    width: 80%;
+    margin: 100px auto 0px auto;
+    text-align: center;
+    color: #000;
+    position: relative;
+
+}
+
+#tall-text-wrap #article-header .article-title {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    font-size: 120px;
+    line-height: 140px;
+    text-align: center;
+}
+
+#tall-text-wrap #article-header .article-title p::selection {
+    background: #000; /* WebKit/Blink Browsers */
+    color: #fff;
+}
+
+#tall-text-wrap #article-header .article-title p::-moz-selection {
+    background: #000; /* Gecko Browsers */
+    color: #fff;
+}
+
+#tall-text-wrap #article-header .author {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: minion_italic
+}
+
+#tall-text-wrap #article-body #content-wrap {
+    float: none;
+    margin: 0 auto;
+}
