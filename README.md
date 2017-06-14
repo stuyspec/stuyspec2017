@@ -1,7 +1,8 @@
 # Stuyvesant Spectator Website 2017
 
 minion: http://fontsgeek.com/search?q=minion+pro
-
+## Bugs
+- navbar collapse is glitchy on tall screens
 ## Standard dependency workflow
 *Do NOT check dependencies into the repo*
 - Create a virtual environment outside the repo (or inside, as long as you
