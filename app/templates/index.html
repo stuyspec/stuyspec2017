@@ -1,34 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1>Articles</h1>
+<h3>For testing purposes:</h3>
+<ul>
+    <li><a href="article">Article</a></li>
+    <li><a href="the_week">The Week</a></li>
+    <li><a href="feed_rail">Feed Rail</a></li>
+    <li><a href="antarctica">Antarctica</a></li>
+    <li><a href="fat_text">Fat Text</a></li>
+    <li><a href="tall_text">Tall Text</a></li>
+</ul>
 
-    {% for post in posts %}
-
-    <hr>
-
-    <div class="post">
-
-        <h3 style="font-family:cheltenham_reg; text-transform: uppercase"> {{ post.title }}</h3>
-
+<h1>Users</h1>
+<hr>
+<ol>
+    {% for user in users %}
+    <li style="font-family:cheltenham_reg;">
+        <p style="font-size: 18px;">{{ user.name }}</p>
         <p>
-            time: {{ post.timestamp }} <br>
-            articleID: {{ post.articleID }}
+            email: {{ user.email }}<br>
+            user id: {{ user.id }}
         </p>
-
-        <h5>Written by:
-            {% for author in post.authors %}
-            {{ author.name }},
-            {% endfor %}
-        </h5>
-        <p>{{ post.body }}</p>
-        <b>viewcount: {{ post.viewcount }}</b>
-        <p>Tags:
-            {% for tag in post.tags %}
-            {{ tag }},
-            {% endfor %}
-        </p>
-    </div>
-
+    </li>
     {% endfor %}
+</ol>
+
+<h1>Articles</h1>
+<hr>
+<ol>
+    {% for article in articles %}
+    <li style="font-family:cheltenham_reg;">
+        <p style="font-size: 18px;">{{ article.title }}</p>
+        <p>
+            time: {{ article.timestamp }}<br>
+            articleID: {{ article.id }}
+        </p>
+        <p>
+            body: {{ article.body }}
+        </p>
+    </li>
+    {% endfor %}
+</ol>
 {% endblock %}
