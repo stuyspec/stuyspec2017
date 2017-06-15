@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app, db, models
+import sys
 import datetime
 
 """
@@ -18,13 +19,22 @@ def index():
                            articles=models.Article.query.all(),
                            users=models.User.query.all())
 
-
 @app.route('/article')
-def article():
+def article_default():
+    article(4)
+
+@app.route('/article/<int:article_id>')
+def article(article_id):
+    a = models.Article.query.get(article_id)
+
+    paragraphs = a.content.split('\n')
+    paragraphs[0] = "<dc>" + paragraphs[0][0] + "</dc>" + paragraphs[0][1:]
+
     return render_template("article.html",
+                           paragraphs=paragraphs,
                            title="Article",
                            navType=1,
-                           article=models.Article.query.get(2))
+                           article=a)
 
 
 

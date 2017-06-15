@@ -21,6 +21,7 @@
 
     <div id="content-wrap">
 
+
         <figure class="media" id="featured-img">
             <img src="http://media.salon.com/2017/01/obama-goodbye.jpg" alt="President Obama">
             <figcaption>
@@ -29,16 +30,12 @@
             </figcaption>
         </figure>
 
-        <p class="article-content">
-            <dc>O</dc>n Monday evening, this season’s free production of Shakespeare in the Park’s “Julius Caesar” will open to an unusual quantity of attention. As audiences beyond the Delacorte Theatre have already heard, the production, which is directed by Oskar Eustis, the longtime artistic director of the Public Theatre, presents Shakespeare’s interpretation of Roman history as a contemporary parable. The setting is one of political upheaval and extreme civil unrest. At the play’s opening, protesters dressed in costumes that suggest contemporary activists ranging from Black Lives Matter to Anonymous plaster political posters on the walls; Caesar, the ascendant leader of the Roman Republic, is presented as President Trump.
+        {% for paragraph in paragraphs %}
+            <p class="article-content">{{ paragraph|safe }}</p>
+        {% endfor %}
+
         </p>
-        <p class="article-content">
-            Played by Gregg Henry, this Caesar wears a navy-blue suit and red tie, has a filigree crest of golden hair, and comes bearing a cell phone in stubby fingers. Eustis’s interpretation highlights Caesar’s preening and his pleasure in adulation. At the beginning of the play, he is already the tyrant whose dangerous ascent Brutus and his other over-throwers fear. The effect of watching Caesar-as-Trump is outrageous, comical, and—especially if you number among those for whom the election of this President has felt like an appalling and dangerous swerve into farce—cathartic in its use of satire.
-        </p>
-        <p class="article-content">
-            What is not played for laughs in this production, however, is Caesar’s death, which comes, as Shakespeare’s text dictates, at the hands of a group of conspirators—and ends with Caesar as a bloodied lump on the floor. It’s this sequence from the play that has made its way, via audience videos taken in previews, to Web sites like the Daily Caller. Over the weekend, the play became a subject of discussion in conservative media and in the Twitter feed of Donald Trump, Jr., who tweeted, “I wonder how much of this ‘art’ is funded by tax payers? . . . when does ‘art’ become political speech & does that change things?”
-        </p>
-        <!-- 
+        <!--
         <div id="article-footer">
             <p class="author-description">The author of this article is a student at Stuyvesant High School.</p>
             <a href="#" class="read-more">More</a>
