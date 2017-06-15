@@ -1,5 +1,7 @@
 from flask import render_template
 from app import app, db, models
+from sqlalchemy import desc
+import sys
 import datetime
 
 """
@@ -12,19 +14,34 @@ navbar:
 @app.route('/')
 @app.route('/index')
 def index():
+    articles = models.Article.query.order_by(desc(models.Article.timestamp))
+    articleProperties = models.Article.__table__.columns
+    users = models.User.query.order_by(models.User.username)
+    userProperties = models.User.__table__.columns
     return render_template("index.html",
                            title="Stuyvesant Spectator",
                            navType=0,
-                           articles=models.Article.query.all(),
-                           users=models.User.query.all())
-
+                           articles=articles,
+                           articleProperties=articleProperties,
+                           users=users,
+                           userProperties=userProperties)
 
 @app.route('/article')
-def article():
+def article_default():
+    article(1)
+
+@app.route('/article/<int:article_id>')
+def article(article_id):
+    a = models.Article.query.get(article_id)
+
+    paragraphs = a.content.split('\n')
+    paragraphs[0] = "<dc>" + paragraphs[0][0] + "</dc>" + paragraphs[0][1:]
+
     return render_template("article.html",
+                           paragraphs=paragraphs,
                            title="Article",
                            navType=1,
-                           article=models.Article.query.get(2))
+                           article=a)
 
 
 
