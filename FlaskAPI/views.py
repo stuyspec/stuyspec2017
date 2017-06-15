@@ -1,5 +1,5 @@
 from flask import render_template
-from app import app, db, models
+from FlaskAPI import app, models
 from sqlalchemy import desc
 import sys
 import datetime
