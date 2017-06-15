@@ -27,3 +27,4 @@ do not check it into the repo)
 | Photo |  Name  |  Role  | Programming Languages  |
 |-------|--------|--------|------------------------|
 | <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
+| <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Jason Kao | Editor | Python, Ruby, JavaScript, C++, SQL |
