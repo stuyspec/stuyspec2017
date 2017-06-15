@@ -25,5 +25,5 @@ do not check it into the repo)
 ## Team
 
 | Photo |  Name  |  Role  | Programming Languages  |
-|--------------------------------------------------|
-| | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
+|-------|--------|--------|------------------------|
+| Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
