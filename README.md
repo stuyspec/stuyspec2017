@@ -26,4 +26,4 @@ do not check it into the repo)
 
 | Photo |  Name  |  Role  | Programming Languages  |
 |--------------------------------------------------|
-| ![Nicholas Yang](http://nicholasyang.com/images/Headshot.jpg) | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
+| | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
