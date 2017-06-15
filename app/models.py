@@ -1,5 +1,8 @@
 from app import db
 
+# database diagram:
+# https://docs.google.com/spreadsheets/d/181bJAbSEepuMjQyhE7dueGexzs7844WE2J2OrlgI3YY/edit?usp=sharing
+
 class User(db.Model):
     __tablename__ = 'user'
 
@@ -13,6 +16,17 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % (str(self.id) + ": " + self.username)
 
+
+class Department(db.Model):
+    __tablename__ = 'department'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), unique=True)
+    articles = db.relationship("Article", back_populates="department")
+
+    def __repr__(self):
+        return '<Department %r>' % (self.name)
+
 class Article(db.Model):
     __tablename__ = 'article'
 
@@ -20,8 +34,11 @@ class Article(db.Model):
     title = db.Column(db.String(256), index=True, unique=True)
     content = db.Column(db.Text)
     timestamp = db.Column(db.DateTime)
-    dept_id = db.Column(db.Integer, index=True, unique=False) # this data type needs to be better
     p_index = db.Column(db.Integer, index=True, unique=False)
+
+    dept_id = db.Column(db.Integer, db.ForeignKey('department.id'))
+    department = db.relationship("Department", back_populates="articles")
 
     def __repr__(self):
         return '<Article %r>' % ( str(self.id) + ": " + self.title )
+
