@@ -1,9 +1,10 @@
 from app import models, db
 import datetime
 import sys
+import codecs
 
 def write_article(title, content_filename, dept_id):
-    with open(content_filename, 'r') as content_file:
+    with codecs.open(content_filename, 'r', 'utf-8') as content_file:
         a = models.Article(title=title.replace('_',' '),
                            content=content_file.read(),
                            timestamp=datetime.datetime.utcnow(),
@@ -57,17 +58,9 @@ def delete_user():
 
 if __name__ == "__main__":
     if sys.argv[1] == 'user':
-        try:
-            write_user( sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6] )
-        except TypeError:
-            print("Usage: user firstname lastname uname pword email")
-            sys.exit()
+        write_user( sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6] )
     elif sys.argv[1] == 'article':
-        try:
-            write_article( sys.argv[2], sys.argv[3], sys.argv[4] )
-        except TypeError:
-            print("Usage: article title content_filename dept_id")
-            sys.exit()
+        write_article( sys.argv[2], sys.argv[3], sys.argv[4] )
     elif sys.argv[1] == 'delete':
         if sys.argv[2] == 'user':
             delete_user()

@@ -54,8 +54,8 @@
     <tr>
         <td></td>
         <td>{{ article.id }}</td>
-        <td>{{ article.title }}</td>
-        <td>{{ article.content[:20] }}...</td>
+        <td><a href="/article/{{ article.id }}">{{ article.title }}</a></td>
+        <td>{{ article.content[:35] }}...</td>
         <td>{{ article.timestamp.strftime('%B %d, %Y') }}</td>
         <td>{{ article.p_index }}</td>
         <td>{{ article.dept_id }}</td>

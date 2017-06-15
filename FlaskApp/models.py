@@ -1,4 +1,4 @@
-from FlaskAPI import db
+from FlaskApp import db
 
 # database diagram:
 # https://docs.google.com/spreadsheets/d/181bJAbSEepuMjQyhE7dueGexzs7844WE2J2OrlgI3YY/edit?usp=sharing

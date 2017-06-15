@@ -1,5 +1,5 @@
 from flask import render_template
-from FlaskAPI import app, models
+from FlaskApp import app, models
 from sqlalchemy import desc
 import sys
 import datetime
@@ -14,9 +14,9 @@ navbar:
 @app.route('/')
 @app.route('/index')
 def index():
-    articles = models.Article.query.order_by(desc(models.Article.timestamp))
+    articles = models.Article.query.all()#order_by(desc(models.Article.timestamp))
     articleProperties = models.Article.__table__.columns
-    users = models.User.query.order_by(models.User.username)
+    users = models.User.query.all()#order_by(models.User.username)
     userProperties = models.User.__table__.columns
     return render_template("index.html",
                            title="Stuyvesant Spectator",
@@ -28,10 +28,19 @@ def index():
 
 @app.route('/article')
 def article_default():
-    article(1)
+    a = models.Article.query.get(1)
+
+    paragraphs = a.content.split('\n')
+    paragraphs[0] = "<dc>" + paragraphs[0][0] + "</dc>" + paragraphs[0][1:]
+
+    return render_template("article.html",
+                           paragraphs=paragraphs,
+                           title="Article",
+                           navType=1,
+                           article=a)
 
 @app.route('/article/<int:article_id>')
-def article(article_id):
+def article_test(article_id):
     a = models.Article.query.get(article_id)
 
     paragraphs = a.content.split('\n')
@@ -43,7 +52,9 @@ def article(article_id):
                            navType=1,
                            article=a)
 
-
+@app.route('/<department>/<title>')
+def article(department, title):
+    return render_template("article.html")
 
 
 
