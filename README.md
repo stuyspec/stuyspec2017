@@ -30,4 +30,4 @@ do not check it into the repo)
 | <img src="https://i.imgur.com/Gyat6Ts.png" align="left" height="100" > | Jason Kao | Editor | Python, Ruby, JavaScript, C++, SQL |
 | <img src="https://ih1.redbubble.net/image.265404657.9078/flat,800x800,075,f.u1.jpg" align="left" height="100" > | George Zheng | Editor | Python |
 | <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12932566_743144365821892_1371702610685774858_n.jpg?oh=11c911a41fe09c2eae160004dddaf995&oe=59A078EF" align="left" height="100" > | Raunak Chowdhury | Developer | Python |
-| <img src="https://www.facebook.com/photo.php?fbid=785938064910478&set=t.100004828746320&type=3&theater" align="left" height="100" > | Jason Lin | Developer | Python |
+| <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-0/p206x206/17903692_785938064910478_3786230932291906266_n.jpg?oh=5ba0babb20909609ec5241b5d7ee7193&oe=59A1E181" align="left" height="100" > | Jason Lin | Developer | Python |
