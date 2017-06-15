@@ -21,3 +21,9 @@ do not check it into the repo)
 - Use automated deployment scripts
   - A good way to automate deployment is through git hooks
 - Do not use spaces, hyphens or slashes in the app name
+
+## Team
+
+| Photo |  Name  |  Role  | Programming Languages  |
+|--------------------------------------------------|
+| ![Nicholas Yang](http://nicholasyang.com/images/Headshot.jpg) | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
