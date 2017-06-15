@@ -15,28 +15,7 @@ BASE CSS: TABLE OF CONTENTS
 
 /*---------- 1.) typography ----------*/
 
-@font-face {
-    font-family: 'neutra_text_light';
-    src: url('../fonts/neutra_text_tf_light_demi.ttf');
-    font-weight: light;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'neutra_text_demi';
-    src: url('../fonts/neutra_text_tf_demi.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'neutra_text_bold';
-    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
+@font-face { /* main font for the website */
     font-family: 'minion_reg';
     src: url('../fonts/Minion_Pro_Regular.ttf');
     font-weight: normal;
@@ -64,7 +43,37 @@ BASE CSS: TABLE OF CONTENTS
     font-style: italic;
 }
 
+@font-face { /* main font for navbar */
+    font-family: 'graphik_reg';
+    src: url('../fonts/Graphik-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
+    font-family: 'neutra_text_light';
+    src: url('../fonts/neutra_text_tf_light_demi.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutra_text_demi';
+    src: url('../fonts/neutra_text_tf_demi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neutra_text_bold';
+    src: url('../fonts/neutra_text_tf_alt_bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face { /* The Spectator logo font */
     font-family: 'old_english_mt';
     src: url('../fonts/Old_English_Text_MT.ttf');
     font-weight: normal;
