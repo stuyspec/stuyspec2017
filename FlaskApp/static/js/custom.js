@@ -4,11 +4,11 @@ $(document).ready(function() {
 
     });
 
-    var fixmeTop = $('.fixme').offset().top;
-    var navType = $('.fixme').attr('data-nav-type');
+    var fixmeTop = $('.fixed-controller').offset().top;
+    var navType = $('.fixed-controller').attr('data-nav-type');
 
     if (navType == '1') {
-        $('.fixme').addClass('fixed-topnav');
+        $('.fixed-controller').addClass('fixed-topnav');
         $('.content').css('margin-top', $('.navbar').height());
     }
 
@@ -24,12 +24,13 @@ $(document).ready(function() {
             console.log(currentScroll - fixmeTop);
             if (currentScroll > fixmeTop)
             {
-                $('.fixme').addClass('fixed-topnav');
-                $('#content').css('margin-top', $('.logo-container').height() + 10);
+                $('.fixed-controller').addClass('fixed-topnav');
+                // outerHeight( inludeMargin? )
+                $('#content').css('margin-top', $('.fixed-controller').outerHeight(true) + 14);
             }
             else
             {
-                $('.fixme').removeClass('fixed-topnav');
+                $('.fixed-controller').removeClass('fixed-topnav');
                 $('#content').css('margin-top', 0);
             }
         }

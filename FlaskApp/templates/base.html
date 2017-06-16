@@ -28,37 +28,34 @@
 
         <div class="container">
 
-            <div class="header-wrapper">
+            <div id="header-wrapper">
 
-                <section class="logo-container">
+                <div id="top-bar">
 
-                {% if navType == 0 %}
-                <div id="logo">
-                    <a href="http://www.stuyspec.com/">
-                        <h1>Spectator</h1>
-                    </a>
-                </div>
-                {% else %}
-                {% endif %}
+                    {% if navType == 0 %}
+                    <div id="logo">
+                        <a href="{{ url_for('index') }}">
+                            <h1>Spectator</h1>
+                        </a>
+                    </div>
+                    {% else %}
+                    {% endif %}
 
-                {%
-                set navigation_bar = [
-                ('/news', 'News', 'all'),
-                ('/opinions', 'Opinions', 'all'),
-                ('/features', 'Features', 'all'),
-                ('/ae', 'A&E', 'all'),
-                ('/humor', 'Humor', 'all'),
-                ('/sports', 'Sports', 'all'),
-                ('/photo', 'Photo', 'all'),
-                ('/subscribe', 'Subscribe', 'all')
-                ]
-                %}
+                    {%
+                    set navigation_bar = [
+                    ('/news', 'News', 'all'),
+                    ('/opinions', 'Opinions', 'all'),
+                    ('/features', 'Features', 'all'),
+                    ('/ae', 'A&E', 'all'),
+                    ('/humor', 'Humor', 'all'),
+                    ('/sports', 'Sports', 'all'),
+                    ('/photo', 'Photo', 'all'),
+                    ('/art', 'Art', 'all'),
+                    ('/subscribe', 'Subscribe', 'all')
+                    ]
+                    %}
 
-                <nav class="navbar navbar-default fixme"
-                     id="mainNav"
-                     data-nav-type="{{ navType }}">
-
-                    <div class="container-fluid">
+                    <nav class="navbar fixed-controller" id="mainNav" data-nav-type="{{ navType }}">
 
                         <div class="navbar-header">
                             <div id="logo">
@@ -66,7 +63,6 @@
                                     <h1>Spectator</h1>
                                 </a>
                             </div>
-
                             <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -77,72 +73,23 @@
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
                                 {% for href, caption, permission in navigation_bar %}
-
-                                {% if href == "dropdown" %}
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="">DEFAULT_DROPDOWN_LABEL<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        {% for href_d, caption_d in caption %}
-                                        <li><a href="{{ href_d }}">{{ caption_d }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-
-                                {% else %}
                                 <li>
                                     <a href="{{ href }}"
                                        {% if caption == "Subscribe" %}
                                        class="text-red"
                                        {% endif %}
-                                       {% if caption == "All" %}
-                                       class="text-underline"
-                                        {% endif %}
-                                    >{{ caption }}</a></li>
-
-                                {% endif %}
-
-                                {% endfor %}
-
-                                {#
-                                {% for href, id in navigation_bar %}
-                                {% if href == "dropdown" and ((user and user.check_permission(permission)) or permission == 'all') %}
-                                <li
-                                    {% for href_d, caption_d in id if href_d == active_page %}
-                                    class="active"
-                                    {% endfor %}
-                                >
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">{{ caption | e }}<span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        {% for href_d, caption_d in id %}
-                                        <li><a href="{{ url_for(href_d) }}">{{ caption_d | e }}</a></li>
-                                        {% endfor %}
-                                    </ul>
+                                    >{{ caption }}</a>
                                 </li>
-                                {% else %}
-                                {% if (user and user.check_permission(permission)) or permission == 'all' %}
-                                <li {% if href == active_page %} class="active" {% endif %}>
-                                    <a href="{{ url_for(href) }}">{{ caption | e }}</a>
-                                </li>
-                                {% endif %}
-                                {% endif %}
                                 {% endfor %}
-                                #}
-
                             </ul>
                         </div>
-                    </div>
-                </nav>
-                <!-- navbar (end) -->
 
-                </section>
-
+                    </nav>
+                </div>
             </div>
 
             <div id="content">
-
                 {% block content %}{% endblock %}
-
             </div>
 
         </div>
