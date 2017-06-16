@@ -207,22 +207,18 @@ body {
                 0 -5px 3px -10px #fff;
 }
 
-@media (min-width: 768px) {
+#top-bar .navbar .navbar-collapse {
+    padding: 0;
+}
 
-    #top-bar .navbar .navbar-collapse {
-        padding: 0;
-    }
-
-    #top-bar .navbar .navbar-collapse .navbar-nav {
-        display: inline-block;
-        float: none;
-        position: relative;
-        top: 6px;
-    }
+#top-bar .navbar .navbar-collapse .navbar-nav {
+    display: inline-block;
+    float: none;
+    position: relative;
+    top: 6px;
 }
 
 @media (max-width: 767px) {
-
     #top-bar #logo-main a h1 {
         color: #fff;
     }
@@ -269,4 +265,71 @@ body {
     #top-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
         width: 19px;
     }
+}
+/*
+@media (max-width: 767px) {
+*/
+
+.hamburger-bar .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                0 -5px 3px -10px #fff;
+}
+
+.hamburger-bar .navbar-collapse {
+    display: none !important;
+}
+
+.hamburger-bar .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+}
+
+.hamburger-bar .navbar-nav > li {
+    float: none;
+}
+
+.hamburger-bar .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hamburger-bar .collapse.in {
+    display: block !important;
+}
+
+.hamburger-bar .navbar .navbar-header {
+    margin: 0;
+}
+
+.hamburger-bar .navbar .navbar-header #logo {
+    display: inline;
+}
+
+.hamburger-bar .navbar .navbar-header #logo a h1 {
+    display: inline;
+}
+
+.hamburger-bar .navbar .navbar-header .navbar-toggle {
+    display: inline;
+    position: relative;
+    border: none
+}
+
+.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar {
+    background-color: #000000 !important;
+    height: 2px;
+    border-radius: 0;
+    width: 22px;
+}
+
+.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
+    width: 16px;
+}
+
+.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
+    width: 19px;
 }
