@@ -1,4 +1,4 @@
-from app import models, db
+from FlaskApp import models, db
 import datetime
 import sys
 import codecs
