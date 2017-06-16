@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 {% block content %}
 
 <style>
@@ -34,26 +34,26 @@
     </tr>
     {% endfor %}
 </table>
+
 <h1>Users</h1>
 <hr>
 <table>
     <th>
-        {% for userProperty in userProperties %}
-        <td>{{ userProperty }}</td>
+        {% for articleProperty in articleProperties %}
+        <td>{{ articleProperty }}</td>
         {% endfor %}
     </th>
-    {% for user in users %}
+    {% for article in articles %}
     <tr>
         <td></td>
-        <td>{{ user.id }}</td>
-        <td>{{ user.firstName }}</td>
-        <td>{{ user.lastName }}</td>
-        <td>{{ user.username }}</td>
-        <td>{{ user.password }}</td>
-        <td>{{ user.email }}</td>
+        <td>{{ article.id }}</td>
+        <td><a href="/article/{{ article.id }}">{{ article.title }}</a></td>
+        <td>{{ article.content[:35] }}...</td>
+        <td>{{ article.timestamp.strftime('%B %d, %Y') }}</td>
+        <td>{{ article.p_index }}</td>
+        <td>{{ article.dept_id }}</td>
     </tr>
     {% endfor %}
 </table>
-
 
 {% endblock %}

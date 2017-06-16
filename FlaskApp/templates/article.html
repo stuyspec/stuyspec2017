@@ -5,7 +5,7 @@
 
 <div id="article-header">
 
-    <h3 id="section">{{ article.section }}</h3>
+    <h3 id="section">{{ article.dept_id }}</h3>
     <p id="big-title">
         {{ article.title }}
     </p>
@@ -21,7 +21,6 @@
 
     <div id="content-wrap">
 
-
         <figure class="media" id="featured-img">
             <img src="http://media.salon.com/2017/01/obama-goodbye.jpg" alt="President Obama">
             <figcaption>
@@ -33,13 +32,6 @@
         {% for paragraph in paragraphs %}
             <p class="article-content">{{ paragraph|safe }}</p>
         {% endfor %}
-
-        </p>
-        <!--
-        <div id="article-footer">
-            <p class="author-description">The author of this article is a student at Stuyvesant High School.</p>
-            <a href="#" class="read-more">More</a>
-        </div>-->
 
     </div>
 

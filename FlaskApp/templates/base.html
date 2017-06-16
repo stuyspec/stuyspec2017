@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 {% set title = title | default('DEFAULT_TITLE') %}
+<!-- to be changed after production to "Stuyvesant Spectator" -->
 
 <html lang="en">
 
@@ -30,10 +31,10 @@
 
             <div id="header-wrapper">
 
-                <div class="hamburger-bar" id="top-bar">
+                <div id="top-bar">
 
                     {% if navType == 0 %}
-                    <div id="logo-main">
+                    <div id="logo">
                         <a href="{{ url_for('index') }}">
                             <h1>Spectator</h1>
                         </a>

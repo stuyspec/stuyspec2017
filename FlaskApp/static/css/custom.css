@@ -15,34 +15,25 @@ BASE CSS: TABLE OF CONTENTS
 
 /*---------- 1.) typography ----------*/
 
-@font-face { /* main font for the website */
+/* Minion is the main font of the website. */
+@font-face {
     font-family: 'minion_reg';
     src: url('../fonts/Minion_Pro_Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'minion_italic';
     src: url('../fonts/Minion_Pro_Italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'minion_bold';
     src: url('../fonts/Minion_Pro_Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'minion_bolditalic';
-    src: url('../fonts/Minion_Pro_BoldItalic.ttf');
-    font-weight: bold;
-    font-style: italic;
-}
-
 @font-face { /* main font for navbar */
     font-family: 'circular_bk';
     src: url('../fonts/CircularStd-Book.otf');
@@ -50,20 +41,19 @@ BASE CSS: TABLE OF CONTENTS
     font-style: normal;
 }
 
+/* Neutra Text for subheaders (bylines, datelines) */
 @font-face {
     font-family: 'neutra_text_light';
     src: url('../fonts/neutra_text_tf_light_demi.ttf');
     font-weight: light;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'neutra_text_demi';
     src: url('../fonts/neutra_text_tf_demi.ttf');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'neutra_text_bold';
     src: url('../fonts/neutra_text_tf_alt_bold.ttf');
@@ -71,15 +61,15 @@ BASE CSS: TABLE OF CONTENTS
     font-style: normal;
 }
 
-
-
-@font-face { /* The Spectator logo font */
+/* Old English Text for The Spectator logo */
+@font-face {
     font-family: 'old_english_mt';
     src: url('../fonts/Old_English_Text_MT.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
+/* We replace Minion with Goudy Old if we're ever feeling scandalous. */
 @font-face {
     font-family: 'goudy_old_reg';
     src: url('../fonts/Goudy Old Style Regular.ttf');
@@ -128,7 +118,6 @@ body {
 
 /*---------- 3.) base ----------*/
 
-/* header */
 #top-bar {
     display: block;
     text-align: center;
@@ -139,8 +128,7 @@ body {
     position: relative;
     width: 458px;
     height: 75px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin: 0px auto 15px auto;
 }
 
 #top-bar #logo-main a h1 {
