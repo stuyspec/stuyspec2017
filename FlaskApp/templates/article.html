@@ -30,8 +30,15 @@
         </figure>
 
         {% for paragraph in paragraphs %}
-            <p class="article-content">{{ paragraph|safe }}</p>
+        <p class="article-content">{{ paragraph|safe }}</p>
         {% endfor %}
+
+        <div id="article-footer">
+            <img class="author-picture" src="{{ url_for('static', filename='img/sprite/sprite-s.svg') }}">
+            <p class="author-description">
+                Benedict Cumberbatch, who plays Sherlock Holmes, of a remarkably intelligent and observant individual incapable of relating to human emotion.
+            </p>
+        </div>
 
     </div>
 
@@ -64,7 +71,7 @@
         </div>
 
         <figure class="ad">
-            <img src="http://www.newyorker.com/wp-content/assets/dist/img/cn-ecom/failsafe/cns/NYR_Small_2017.png">
+            <img src="http://www.newyorker.com/wp-content/assets/dist/img/cn-ecom/failsafe/cns/NYR_Small_2017.png" alt="Advertisement">
         </figure>
         <div id="recent-posts">
             <h3>Recent Posts</h3>

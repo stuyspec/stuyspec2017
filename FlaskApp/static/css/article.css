@@ -10,6 +10,8 @@ ARTICLE CSS: TABLE OF CONTENTS:
 - featured img
 - content
 
+2.) main text
+
 3.) centered text
 
 4.) fat text
@@ -234,7 +236,7 @@ dc { /* dropcap */
 }
 
 #main-text-wrap #article-header #article-meta-footer .byline-dateline {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #main-text-wrap #article-header #article-meta-footer .byline-dateline span:first-child {
@@ -268,9 +270,17 @@ dc { /* dropcap */
 
 #main-text-wrap #article-body #article-footer {
     margin-top: 20px;
-    border-top: 1px solid #333;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+#main-text-wrap #article-body #article-footer .author-picture {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
 }
 
 #main-text-wrap #article-body #article-footer .author-description {
+    font-size: 18px;
     font-family: minion_italic;
 }

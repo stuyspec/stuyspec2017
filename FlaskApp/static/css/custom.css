@@ -117,6 +117,13 @@ body {
     text-decoration: underline !important;
 }
 
+a.logo-word,
+a.logo-word:hover {
+    font-family: old_english_mt;
+    color: #000;
+    text-decoration: none !important;
+}
+
 @media (max-width: 767px) {
 
     #content {
@@ -152,7 +159,8 @@ body {
 }
 
 /*---------- 3.1) default nav ----------*/
-.top-bar .navbar .navbar-header #logo {
+.top-bar .navbar .navbar-header #logo,
+.top-bar .navbar .navbar-header #logo-centered {
     display: none;
 }
 
@@ -221,12 +229,17 @@ body {
 
 /*---------- 3.2) hamburger menu ----------*/
 
+#hamburger-menu {
+    margin-bottom: 51px;
+}
+
 #hamburger-menu #logo-main {
     display: none;
 }
 
 #hamburger-menu .navbar .navbar-header {
     float: none;
+    text-align: center;
 }
 
 #hamburger-menu .navbar .navbar-header #logo {
@@ -234,11 +247,29 @@ body {
     height: 0;
     float: left;
     position: relative;
-    bottom: 11px;
+    bottom: 13px;
 }
 
 #hamburger-menu .navbar .navbar-header #logo a h1 {
-    font-size: 31px;
+    display: block;
+    font-size: 30px;
+    border: 0px solid #fff;
+    border-radius: 4px;
+    padding: 2px 3px;
+    transition-duration: 0.1s;
+}
+
+#hamburger-menu .navbar .navbar-header #logo a h1:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#hamburger-menu .navbar .navbar-header #logo-centered {
+    display: block;
+    float: none;
+    height: 0;
+    position: relative;
+    bottom: 13px;
 }
 
 #hamburger-menu .navbar-left,

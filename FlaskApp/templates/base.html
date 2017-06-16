@@ -34,7 +34,7 @@
                 <div class="top-bar" id="" data-nav-type="{{ navType }}">
 
                     <div id="logo-main">
-                        <a href="{{ url_for('index') }}">
+                        <a class="logo-word" href="{{ url_for('index') }}">
                             <h1>Spectator</h1>
                         </a>
                     </div>
@@ -64,6 +64,11 @@
                             <div id="logo">
                                 <a href="{{ url_for('index') }}">
                                     <h1>S</h1>
+                                </a>
+                            </div>
+                            <div id="logo-centered">
+                                <a class="logo-word" href="{{ url_for('index') }}">
+                                    <h2>The Spectator</h2>
                                 </a>
                             </div>
                         </div>
@@ -101,6 +106,10 @@
             <div id="content">
                 {% block content %}{% endblock %}
             </div>
+
+            <!-- sticky footer necessary -->
+            <footer>
+            </footer>
 
         </div>
 
