@@ -1,3 +1,5 @@
+var hamburgerBreakpoint = 768;
+
 $(document).ready(function() {
 
     $(".navbar-toggle").click(function(){
@@ -34,6 +36,26 @@ $(document).ready(function() {
     });
 
 
+    (function($) {
+        var $window = $(window),
+            $topBar = $('div.top-bar');
+
+        function resize() {
+
+            if ($window.width() < hamburgerBreakpoint) {
+                $topBar.attr('id', 'hamburger-menu');
+                console.log($topBar.attr('class'));
+                return $topBar.attr('id', 'hamburger-menu');
+            }
+            $topBar.removeAttr('id');
+        }
+
+        $window
+            .resize(resize)
+            .trigger('resize');
+
+    })(jQuery);
+
 });
 
 function switchNavbar() {
@@ -43,3 +65,5 @@ function switchNavbar() {
         $('.top-bar').attr("id", "hamburger-menu");
     }
 }
+
+
