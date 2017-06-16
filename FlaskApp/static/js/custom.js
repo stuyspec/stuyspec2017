@@ -20,16 +20,11 @@ $(document).ready(function() {
 
         var currentScroll = $(window).scrollTop();
 
-        if (navType == '0') {
-            console.log(currentScroll - fixmeTop);
-            if (currentScroll > fixmeTop)
-            {
+        if (navType == '0' && $(window).width() >= 768) {
+            if (currentScroll > fixmeTop) {
                 $('.fixed-controller').addClass('fixed-topnav');
-                // outerHeight( inludeMargin? )
                 $('#content').css('margin-top', $('.fixed-controller').outerHeight(true) + 14);
-            }
-            else
-            {
+            } else {
                 $('.fixed-controller').removeClass('fixed-topnav');
                 $('#content').css('margin-top', 0);
             }
