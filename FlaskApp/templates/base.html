@@ -56,16 +56,16 @@
                     <nav class="navbar fixed-controller" id="mainNav" data-nav-type="{{ navType }}">
 
                         <div class="navbar-header">
-                            <div id="logo">
-                                <a href="/">
-                                    <h1>Spectator</h1>
-                                </a>
-                            </div>
-                            <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="" >
+                            <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="" onclick="openSideNav()">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <div id="logo">
+                                <a href="{{ url_for('index') }}">
+                                    <h1>S</h1>
+                                </a>
+                            </div>
                         </div>
 
                         <div class="collapse navbar-collapse" id="myNavbar">
@@ -84,6 +84,7 @@
                     </nav>
 
                     <div class="list-group" id="mySideNav">
+                        <a class="list-group-item" onclick="closeSideNav()">TEMP_CLOSE</a>
                         {% for href, caption, permission in navigation_bar %}
                         <a href="{{ href }}"
                            class="list-group-item list-group-item-action

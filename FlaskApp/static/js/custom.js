@@ -55,5 +55,19 @@ function switchNavbar() {
     }
 }
 
+$(document).click(function(event) {
+    var $mySideNav = $('#mySideNav');
+    if(!$(event.target).closest('#mySideNav').length) {
+        if($mySideNav.width() == 250) {
+            closeSideNav();
+        }
+    }
+})
 
+function openSideNav() {
+    $("#mySideNav").width("250px");
+}
 
+function closeSideNav() {
+    $("#mySideNav").width("0px");
+}
