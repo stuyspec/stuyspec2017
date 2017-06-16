@@ -2,29 +2,21 @@ var hamburgerBreakpoint = 768;
 
 $(document).ready(function() {
 
-    $(".navbar-toggle").click(function(){
+    var $window = $(window),
+        $topBar = $('.top-bar');
 
-    });
-
-    var navType = $('.fixed-controller').attr('data-nav-type');
+    var navType = $topBar.attr('data-nav-type');
 
     var fixmeTop = 110;//$('.fixed-controller').offset().top;
 
     if (navType == '1') {
-        $('.fixed-controller').addClass('fixed-topnav');
-        $('#content').css('margin-top', $('.navbar').height());
+        $topBar.attr('id', 'hamburger-menu');
     }
 
-    if (navType == '3') {
-        $('#content').css('margin-top', $('.navbar').height());
-    }
-
-    $(window).scroll(function() {
-
-        var isHamburgerMenu = $(window).width <= 1200;
-
-        if (!isHamburgerMenu) {
-            var currentScroll = $(window).scrollTop();
+    /* Allows latch scrolling for regular navbar. */
+    $window.scroll(function() {
+        if ($topBar.attr('id') != 'hamburger-menu') {
+            var currentScroll = $window.scrollTop();
             if (currentScroll > fixmeTop) {
                 $('.fixed-controller').addClass('fixed-topnav');
                 $('#content').css('margin-top', $('.fixed-controller').outerHeight(true) + 14);
@@ -36,23 +28,20 @@ $(document).ready(function() {
     });
 
 
+    /* Adds responsive id hambureger-menu on navType=0's. */
     (function($) {
-        var $window = $(window),
-            $topBar = $('div.top-bar');
-
         function resize() {
-
             if ($window.width() < hamburgerBreakpoint) {
                 $topBar.attr('id', 'hamburger-menu');
-                console.log($topBar.attr('class'));
                 return $topBar.attr('id', 'hamburger-menu');
             }
             $topBar.removeAttr('id');
         }
-
-        $window
-            .resize(resize)
-            .trigger('resize');
+        if (navType == 0) { // home page
+            $window
+                .resize(resize)
+                .trigger('resize');
+        }
 
     })(jQuery);
 
@@ -65,5 +54,6 @@ function switchNavbar() {
         $('.top-bar').attr("id", "hamburger-menu");
     }
 }
+
 
 
