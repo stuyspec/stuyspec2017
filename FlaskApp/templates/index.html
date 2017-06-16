@@ -1,7 +1,11 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 {% block content %}
 
 <style>
+ table {
+     margin-bottom: 100px;
+ }
+
  table, tr, td {
      border: 1px solid #000;
  }
@@ -10,37 +14,6 @@
  }
 
 </style>
-
-<h3>For testing purposes:</h3>
-<ul>
-    <li><a href="article">Article</a></li>
-    <li><a href="the_week">The Week</a></li>
-    <li><a href="feed_rail">Feed Rail</a></li>
-    <li><a href="antarctica">Antarctica</a></li>
-    <li><a href="fat_text">Fat Text</a></li>
-    <li><a href="tall_text">Tall Text</a></li>
-</ul>
-
-<h1>Users</h1>
-<hr>
-<table>
-    <th>
-        {% for userProperty in userProperties %}
-        <td>{{ userProperty }}</td>
-        {% endfor %}
-    </th>
-    {% for user in users %}
-    <tr>
-        <td></td>
-        <td>{{ user.id }}</td>
-        <td>{{ user.firstName }}</td>
-        <td>{{ user.lastName }}</td>
-        <td>{{ user.username }}</td>
-        <td>{{ user.password }}</td>
-        <td>{{ user.email }}</td>
-    </tr>
-    {% endfor %}
-</table>
 
 <h1>Articles</h1>
 <hr>
@@ -59,6 +32,27 @@
         <td>{{ article.timestamp.strftime('%B %d, %Y') }}</td>
         <td>{{ article.p_index }}</td>
         <td>{{ article.dept_id }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h1>Users</h1>
+<hr>
+<table>
+    <th>
+        {% for userProperty in userProperties %}
+        <td>{{ userProperty }}</td>
+        {% endfor %}
+    </th>
+    {% for user in users %}
+    <tr>
+        <td></td>
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.email }}</td>
     </tr>
     {% endfor %}
 </table>

@@ -21,7 +21,7 @@ $(document).ready(function() {
         var currentScroll = $(window).scrollTop();
 
         if (navType == '0') {
-            console.log(currentScroll - fixmeTop);
+            console.log(currentScroll + "," + fixmeTop + ", " + $('#content').css('margin-top'));
             if (currentScroll > fixmeTop)
             {
                 $('.fixme').addClass('fixed-topnav');
