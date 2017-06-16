@@ -218,46 +218,46 @@ body {
     top: 6px;
 }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {*/
 
-    .top-bar #logo-main {
+    #hamburger-menu #logo-main {
         display: none;
     }
 
-    .top-bar .navbar .navbar-header {
+    #hamburger-menu .navbar .navbar-header {
         float: none;
     }
 
-    .navbar-left,.navbar-right {
+    #hamburger-menu .navbar-left,.navbar-right {
         float: none !important;
     }
 
-    .top-bar .navbar .navbar-header .navbar-toggle {
+    #hamburger-menu .navbar .navbar-header .navbar-toggle {
         display: block;
     }
 
-    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar {
+    #hamburger-menu .navbar .navbar-header .navbar-toggle .icon-bar {
         background-color: #000 !important;
         height: 2px;
         border-radius: 0;
         width: 22px;
     }
 
-    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
+    #hamburger-menu .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
         width: 16px;
     }
 
-    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
+    #hamburger-menu .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
         width: 19px;
     }
 
-    .top-bar .navbar .navbar-collapse {
+    #hamburger-menu .navbar .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
                     0 -5px 3px -10px #fff;
     }
 
-    .top-bar .navbar-fixed-top {
+    #hamburger-menu .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
@@ -265,11 +265,11 @@ body {
     /* further specification will override block display < md-screen,
      * less specificatiln will override none display > md-screen.
      */
-    .navbar-collapse.collapse {
+    #hamburger-menu .navbar-collapse.collapse {
         display: none !important;
     }
 
-    .top-bar .navbar {
+    #hamburger-menu .navbar {
         background-color: #fff;
         position: fixed;
         top: 0;
@@ -279,31 +279,31 @@ body {
                     0 -5px 3px -10px #fff;
     }
 
-    .top-bar .navbar .navbar-collapse .navbar-nav {
+    #hamburger-menu .navbar .navbar-collapse .navbar-nav {
         float: none;
         margin-top: 7.5px;
         top: 0;
     }
 
-    .top-bar .navbar .navbar-collapse .navbar-nav > li {
+    #hamburger-menu .navbar .navbar-collapse .navbar-nav > li {
         float: none;
     }
 
-    .top-bar .navbar .navbar-collapse .navbar-nav > li > a {
+    #hamburger-menu .navbar .navbar-collapse .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    .collapse.in {
+    #hamburger-menu .collapse.in {
         display: block !important;
     }
 
-    .top-bar .navbar .navbar-header .navbar-toggle {
+    #hamburger-menu .navbar .navbar-header .navbar-toggle {
         display: inline;
         position: relative;
         border: none
     }
-}
+
 /*
 @media (max-width: 767px) {
     .top-bar #logo-main a h1 {

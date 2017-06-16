@@ -7,7 +7,7 @@ $(document).ready(function() {
     var navType = $('.fixed-controller').attr('data-nav-type');
 
     var fixmeTop = 110;//$('.fixed-controller').offset().top;
-    
+
     if (navType == '1') {
         $('.fixed-controller').addClass('fixed-topnav');
         $('#content').css('margin-top', $('.navbar').height());
@@ -33,4 +33,13 @@ $(document).ready(function() {
         }
     });
 
+
 });
+
+function switchNavbar() {
+    if ( $('.top-bar').attr("id") == "hamburger-menu") {
+        $('.top-bar').attr("id", "");
+    } else {
+        $('.top-bar').attr("id", "hamburger-menu");
+    }
+}
