@@ -4,11 +4,10 @@ $(document).ready(function() {
 
     });
 
-    var hamburgerMenu = $(window).width() >= 768;
-
-    var fixmeTop = $('.fixed-controller').offset().top;
     var navType = $('.fixed-controller').attr('data-nav-type');
 
+    var fixmeTop = 110;//$('.fixed-controller').offset().top;
+    
     if (navType == '1') {
         $('.fixed-controller').addClass('fixed-topnav');
         $('#content').css('margin-top', $('.navbar').height());
@@ -20,9 +19,10 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-        var currentScroll = $(window).scrollTop();
+        var isHamburgerMenu = $(window).width <= 1200;
 
-        if (navType == '0' && hamburgerMenu) {
+        if (!isHamburgerMenu) {
+            var currentScroll = $(window).scrollTop();
             if (currentScroll > fixmeTop) {
                 $('.fixed-controller').addClass('fixed-topnav');
                 $('#content').css('margin-top', $('.fixed-controller').outerHeight(true) + 14);

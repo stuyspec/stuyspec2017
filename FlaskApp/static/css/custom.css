@@ -129,13 +129,13 @@ body {
 /*---------- 3.) base ----------*/
 
 /* header */
-#top-bar {
+.top-bar {
     display: block;
     text-align: center;
     margin-bottom: 8px;
 }
 
-#top-bar #logo-main {
+.top-bar #logo-main {
     position: relative;
     width: 458px;
     height: 75px;
@@ -143,44 +143,44 @@ body {
     margin-bottom: 15px;
 }
 
-#top-bar #logo-main a h1 {
+.top-bar #logo-main a h1 {
     font-family: old_english_mt;
     color: #000;
     font-size: 75px;
 }
 
-#top-bar #logo-main a:hover,
-#top-bar #logo-main a:focus {
+.top-bar #logo-main a:hover,
+.top-bar #logo-main a:focus {
     text-decoration: none !important;
 }
 
-#top-bar .navbar .navbar-header #logo {
+.top-bar .navbar .navbar-header #logo {
     display: none;
     font-family: old_english_mt;
     color: #000;
     font-size: 37px;
 }
 
-#top-bar .navbar .navbar-header #logo a,
-#top-bar .navbar .navbar-header #logo a:hover,
-#top-bar .navbar .navbar-header #logo a:focus {
+.top-bar .navbar .navbar-header #logo a,
+.top-bar .navbar .navbar-header #logo a:hover,
+.top-bar .navbar .navbar-header #logo a:focus {
     color: #000;
     text-decoration: none !important;
 }
 
-#top-bar .navbar .navbar-nav li {
+.top-bar .navbar .navbar-nav li {
     margin: 0px 10px;
     border: 0px solid #fff;
     border-radius: 5px;
     transition-duration: .12s;
 }
 
-#top-bar .navbar .navbar-nav li:hover {
+.top-bar .navbar .navbar-nav li:hover {
     cursor: default;
     background-color: #E3E3E3;
 }
 
-#top-bar .navbar .navbar-nav li a {
+.top-bar .navbar .navbar-nav li a {
     padding: 4px 5px;
     font-family: circular_bk;
     color: #000000;
@@ -189,15 +189,15 @@ body {
     text-decoration: none;
 }
 
-#top-bar .navbar .navbar-nav li a:hover,
-#top-bar .navbar .navbar-nav li a:focus,
-#top-bar .navbar .navbar-nav li a:visited,
-#top-bar .navbar .navbar-nav li a:active {
+.top-bar .navbar .navbar-nav li a:hover,
+.top-bar .navbar .navbar-nav li a:focus,
+.top-bar .navbar .navbar-nav li a:visited,
+.top-bar .navbar .navbar-nav li a:active {
     color: #000000;
     background-color: transparent;
 }
 
-#top-bar .fixed-topnav {
+.top-bar .fixed-topnav {
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -207,70 +207,135 @@ body {
                 0 -5px 3px -10px #fff;
 }
 
-#top-bar .navbar .navbar-collapse {
+.top-bar .navbar .navbar-collapse {
     padding: 0;
 }
 
-#top-bar .navbar .navbar-collapse .navbar-nav {
+.top-bar .navbar .navbar-collapse .navbar-nav {
     display: inline-block;
     float: none;
     position: relative;
     top: 6px;
 }
 
-@media (max-width: 767px) {
-    #top-bar #logo-main a h1 {
-        color: #fff;
+@media (max-width: 1200px) {
+
+    .top-bar #logo-main {
+        display: none;
     }
 
-    #top-bar .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #fff;
-        /* the following line of code removes text blur under the box shadow, credits to nyr. */
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
-                    0 -5px 3px -10px #fff;
+    .top-bar .navbar .navbar-header {
+        float: none;
     }
 
-    #top-bar .navbar .navbar-header {
-        margin: 0;
+    .navbar-left,.navbar-right {
+        float: none !important;
     }
 
-    #top-bar .navbar .navbar-header #logo {
-        display: inline;
+    .top-bar .navbar .navbar-header .navbar-toggle {
+        display: block;
     }
 
-    #top-bar .navbar .navbar-header #logo a h1 {
-        display: inline;
-    }
-
-    #top-bar .navbar .navbar-header .navbar-toggle {
-        display: inline;
-        position: relative;
-        border: none
-    }
-
-    #top-bar .navbar .navbar-header .navbar-toggle .icon-bar {
-        background-color: #000000 !important;
+    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar {
+        background-color: #000 !important;
         height: 2px;
         border-radius: 0;
         width: 22px;
     }
 
-    #top-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
+    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
         width: 16px;
     }
 
-    #top-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
+    .top-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
         width: 19px;
+    }
+
+    .top-bar .navbar .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                    0 -5px 3px -10px #fff;
+    }
+
+    .top-bar .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    /* further specification will override block display < md-screen,
+     * less specificatiln will override none display > md-screen.
+     */
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .top-bar .navbar {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* box-shadow no blur solution from newyorker.com */
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15),
+                    0 -5px 3px -10px #fff;
+    }
+
+    .top-bar .navbar .navbar-collapse .navbar-nav {
+        float: none;
+        margin-top: 7.5px;
+        top: 0;
+    }
+
+    .top-bar .navbar .navbar-collapse .navbar-nav > li {
+        float: none;
+    }
+
+    .top-bar .navbar .navbar-collapse .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+    .top-bar .navbar .navbar-header .navbar-toggle {
+        display: inline;
+        position: relative;
+        border: none
     }
 }
 /*
 @media (max-width: 767px) {
-*/
+    .top-bar #logo-main a h1 {
+        color: #fff;
+    }
 
-.hamburger-bar .navbar {
+    .top-bar .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .top-bar .navbar .navbar-header {
+        margin: 0;
+    }
+
+    .top-bar .navbar .navbar-header #logo {
+        display: inline;
+    }
+
+    .top-bar .navbar .navbar-header #logo a h1 {
+        display: inline;
+    }
+
+    
+}
+/*
+@media (max-width: 767px) {
+
+
+#hamburger-bar .navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -279,57 +344,57 @@ body {
                 0 -5px 3px -10px #fff;
 }
 
-.hamburger-bar .navbar-collapse {
+#hamburger-bar .navbar-collapse {
     display: none !important;
 }
 
-.hamburger-bar .navbar-nav {
+#hamburger-bar .navbar-nav {
     float: none!important;
     margin-top: 7.5px;
 }
 
-.hamburger-bar .navbar-nav > li {
+#hamburger-bar .navbar-nav > li {
     float: none;
 }
 
-.hamburger-bar .navbar-nav > li > a {
+#hamburger-bar .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.hamburger-bar .collapse.in {
+#hamburger-bar .collapse.in {
     display: block !important;
 }
 
-.hamburger-bar .navbar .navbar-header {
+#hamburger-bar .navbar .navbar-header {
     margin: 0;
 }
 
-.hamburger-bar .navbar .navbar-header #logo {
+#hamburger-bar .navbar .navbar-header #logo {
     display: inline;
 }
 
-.hamburger-bar .navbar .navbar-header #logo a h1 {
+#hamburger-bar .navbar .navbar-header #logo a h1 {
     display: inline;
 }
 
-.hamburger-bar .navbar .navbar-header .navbar-toggle {
+#hamburger-bar .navbar .navbar-header .navbar-toggle {
     display: inline;
     position: relative;
     border: none
 }
 
-.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar {
+#hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar {
     background-color: #000000 !important;
     height: 2px;
     border-radius: 0;
     width: 22px;
 }
 
-.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
+#hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:first-child {
     width: 16px;
 }
 
-.hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
+#hamburger-bar .navbar .navbar-header .navbar-toggle .icon-bar:last-child {
     width: 19px;
 }

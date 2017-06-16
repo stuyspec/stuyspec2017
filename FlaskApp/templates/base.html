@@ -30,16 +30,13 @@
 
             <div id="header-wrapper">
 
-                <div class="hamburger-bar" id="top-bar">
+                <div class="top-bar"">
 
-                    {% if navType == 0 %}
                     <div id="logo-main">
                         <a href="{{ url_for('index') }}">
                             <h1>Spectator</h1>
                         </a>
                     </div>
-                    {% else %}
-                    {% endif %}
 
                     {%
                     set navigation_bar = [
