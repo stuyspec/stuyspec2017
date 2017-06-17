@@ -25,7 +25,7 @@ do not check it into the repo)
 ## Team
 
 | Photo |  Name  |  Role  | Github  |  Email  |
-|-------|--------|--------|------------------------|
+|-------|--------|--------|---------|---------------|
 | <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
 | <img src="https://i.imgur.com/Gyat6Ts.png" align="left" height="100" > | Jason Kao | Editor | jkao1 |  jkao1@stuy.edu |
 | <img src="https://ih1.redbubble.net/image.265404657.9078/flat,800x800,075,f.u1.jpg" align="left" height="100" > | George Zheng | Editor | IM NOT SURE |  gzheng3@stuy.edu  |
