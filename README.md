@@ -26,7 +26,7 @@ do not check it into the repo)
 
 | Photo |  Name  |  Role  | Github  |  Email  |
 |-------|--------|--------|---------|---------------|
-| <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Nicholas Yang | Project Consultant | Python, Ruby, JavaScript, C++, SQL |
+| <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Nicholas Yang | Project Consultant | NicholasLYang | nick@nicholasyang.com |
 | <img src="https://i.imgur.com/Gyat6Ts.png" align="left" height="100" > | Jason Kao | Editor | jkao1 |  jkao1@stuy.edu |
 | <img src="https://ih1.redbubble.net/image.265404657.9078/flat,800x800,075,f.u1.jpg" align="left" height="100" > | George Zheng | Editor | |  gzheng3@stuy.edu  |
 | <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12308272_1173580929338001_7544449936608883692_n.jpg?oh=7c97f7287fb2e8a6836cf9fb61a70174&oe=59C9EE27" align="left" height="100" > | Henry Zheng | Lead Developer | henryz2000 | hzheng3@stuy.edu |
