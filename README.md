@@ -36,3 +36,4 @@ do not check it into the repo)
 | <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16831085_649694105210308_4808979255089774176_n.jpg?oh=d5cc014852fb07a3bb7fc8eec4979339&oe=59E8BAEF" align="left" height="100" > | Joyce Liao | Developer | joyceliaoo | jliao@stuy.edu |
 | <img src="http://hw-img.datpiff.com/mbf37a1b/Nile_I_Dont_Exist_demo-front.jpg" align="left" height="100" > | Jonathan Wong | Developer | jonw27 | admin@stuy.tech
 | <img src="http://www.free-avatars.com/data/media/82/landscape_avatar_0019.jpg" align="left" height="100" >| Angela Tom | Developer | angelatom | atom@stuy.edu |
+| <img src="https://avatars1.githubusercontent.com/u/27791964?v=3&u=905f8b972dc170061fbe11b2fe5e922c4f501f27&s=400" align="left" height="100" >| Qichen Deng | Developer | QichenD | qichendeng@stuy.edu |
