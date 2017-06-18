@@ -32,3 +32,4 @@ do not check it into the repo)
 | <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12932566_743144365821892_1371702610685774858_n.jpg?oh=11c911a41fe09c2eae160004dddaf995&oe=59A078EF" align="left" height="100" > | Raunak Chowdhury | Developer | raunakchowdhury | rchowdhury5@stuy.edu |
 | <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-0/p206x206/17903692_785938064910478_3786230932291906266_n.jpg?oh=5ba0babb20909609ec5241b5d7ee7193&oe=59A1E181" align="left" height="100" > | Jason Lin | Developer | |
 | <img src="http://gazettereview.com/wp-content/uploads/2016/03/facebook-avatar.jpg" align="left" height="100" > | Jerry Ye | Developer | jerry1ye10 | jye6@stuy.edu | |
+| <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16831085_649694105210308_4808979255089774176_n.jpg?oh=d5cc014852fb07a3bb7fc8eec4979339&oe=59E8BAEF" align="left" height="100" > | Joyce Liao | Developer | joyceliaoo | jliao@stuy.edu |
