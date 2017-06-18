@@ -248,6 +248,7 @@ a.logo-word:hover {
     float: left;
     position: relative;
     bottom: 13px;
+    z-index: 5;
 }
 
 #hamburger-menu .navbar .navbar-header #logo a h1 {
@@ -270,6 +271,7 @@ a.logo-word:hover {
     height: 0;
     position: relative;
     bottom: 13px;
+    z-index: 2;
 }
 
 #hamburger-menu .navbar-left,
@@ -279,6 +281,7 @@ a.logo-word:hover {
 
 #hamburger-menu .navbar .navbar-header .navbar-toggle {
     display: block;
+    z-index: 5;
 }
 
 #hamburger-menu .navbar .navbar-header .navbar-toggle .icon-bar {
