@@ -42,3 +42,4 @@ do not check it into the repo)
 | <img src="https://i.imgur.com/wfQYBT9.png" align="left" height="100" > | Kenneth Zhang | Developer | KenZ3 | kzhang8@stuy.edu |
 | <img src="https://s-media-cache-ak0.pinimg.com/736x/9d/31/e0/9d31e0c2442c02b1dac172285ad61afc.jpg" align="left" height="100" > | Cathy Cai | CFA Developer | ccai1 | ccai1@stuy.edu |
 | <img src="http://1.bp.blogspot.com/-2cl0a37VYPY/Vova8h-D_NI/AAAAAAAAAeY/CPr_Ivr7fpU/s1600/curti.png" align="left" height="100" > | Alvin Chung | Developer | achung0 | achung00@stuy.edu |  
+| <img src="https://s-media-cache-ak0.pinimg.com/736x/72/19/e8/7219e8b1b182d381c7725b2d404dacd9.jpg" align="left" height="100"> |  Claire Liu  |  CFA Developer  | cliu5  |  cliu5@stuy.edu  |
