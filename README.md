@@ -40,4 +40,4 @@ do not check it into the repo)
 | <img src="https://avatars1.githubusercontent.com/u/27791964?v=3&u=905f8b972dc170061fbe11b2fe5e922c4f501f27&s=400" align="left" height="100" >| Qichen Deng | Developer | QichenD | qichendeng@stuy.edu |
 | <img src="https://uproxx.files.wordpress.com/2017/05/mocking-spongebob.jpg?quality=100&w=650" align="left" height="100" >| Sabrina Wen | Developer | sabrina-wen | sabrinawn253@gmail.com |
 | <img src="https://i.imgur.com/wfQYBT9.png" align="left" height="100" > | Kenneth Zhang | Developer | KenZ3 | kzhang8@stuy.edu |
-| <img src="https://s-media-cache-ak0.pinimg.com/736x/9d/31/e0/9d31e0c2442c02b1dac172285ad61afc.jpg" align="left" height="100" > | Cathy Cai | Developer | ccai1 | ccai1@stuy.edu |
+| <img src="https://s-media-cache-ak0.pinimg.com/736x/9d/31/e0/9d31e0c2442c02b1dac172285ad61afc.jpg" align="left" height="100" > | Cathy Cai | CFA Developer | ccai1 | ccai1@stuy.edu |
