@@ -1,0 +1,286 @@
+/*
+
+ARTICLE CSS: TABLE OF CONTENTS:
+
+1.) default styles
+- media
+- header
+- article body
+- footer
+- featured img
+- content
+
+2.) main text
+
+3.) centered text
+
+4.) fat text
+
+5.) tall text
+
+6.) feed rail
+*/
+
+/*---------- 1.) default styles ----------*/
+
+#content-wrap {
+    overflow: visible !important;
+}
+
+#content-wrap figure {
+    margin: 20px 0px 15px 10px;
+}
+
+#content-wrap figure.alignright {
+    float: right;
+}
+#content-wrap figure.alignleft {
+    float: left;
+}
+
+#content-wrap figure.size-lg {
+    max-height: 550px;
+    max-width: 550px;
+}
+#content-wrap figure.size-md {
+    max-height: 300px;
+    max-width: 300px;
+}
+#content-wrap figure.size-sm {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+#content-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#content-wrap figure.fullbody img {
+    width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+#content-wrap figure.fullwidth {
+    margin: 0;
+    margin-left: -33.33333%;
+    width: 167%;
+}
+
+#content-wrap figure.fullwidth .overflow-container {
+    height: 350px;
+    overflow-y: hidden;
+    margin: 15px 0px;
+}
+
+#content-wrap figure.fullwidth img {
+    width: 100%;
+    height: auto;
+}
+
+#content-wrap figure.overflow-lg .overflow-container img {
+    margin: -225px 0px 0px 0px;
+}
+
+#content-wrap figure.overflow-md .overflow-container img {
+    margin: -150px 0px 0px 0px;
+}
+
+#content-wrap figure.overflow-sm .overflow-container img {
+    margin: -50px 0px 0px 0px;
+}
+
+#content-wrap figure figcaption {
+    text-align: center;
+    font-family: minion_italic;
+    font-size: 16px;
+}
+
+#content-wrap figure figcaption .caption-credits {
+    text-transform: uppercase;
+    font-family: neutra_text_bold;
+    font-size: 12px;
+    color: #565656;
+}
+
+#content-wrap blockquote.article-quote {
+    font-family: minion_bold;
+    font-size: 30px;
+    line-height: 48px;
+    border: none;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#content-wrap blockquote.article-quote .person1 {
+    color: #f47862;
+}
+
+#content-wrap blockquote.article-quote .person2 {
+    color: #0c4b4a;
+}
+
+#content-wrap blockquote.article-outquote {
+    font-family: minion_bold;
+    border-left: none;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin: 25px auto;
+}
+
+#content-wrap figure.video-centered {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#content-wrap figure.video-centered video {
+    width: 100%;
+}
+
+/* sizes */
+#article-header,
+#article-footer {
+    display: block;
+    min-height: 40px;
+}
+
+#article-header #department {
+    color: #df3331;
+}
+
+/* layout */
+#content-wrap {
+    overflow: hidden;
+}
+
+#content-wrap {
+    float: left;
+    width: 66%;
+}
+
+/* featured img */
+figure#featured-img {
+    display: block;
+    font-family: minion_reg;
+    margin: 10px 0px 0px 0px;
+}
+
+figure#featured-img img {
+    width: 100%;
+}
+
+figure#featured-img figcaption {
+    line-height: 16px;
+    text-align: left !important;
+    margin-top: 8px;
+}
+
+#featured-img figcaption #caption {
+    font-size: 14px;
+    font-family: minion_reg;
+}
+
+#featured-img figcaption #credit {
+    font-size: 14px;
+    color: #999;
+}
+
+.media figcaption {
+    font-size: 16px;
+    font-family: minion_reg;
+    color: #555;
+}
+
+#content-wrap .article-content {
+    font-family: minion_reg;
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 30px;
+}
+
+dc { /* dropcap */
+    font-family: minion_italic;
+    float: left;
+    font-size: 5em;
+    line-height: 83px;
+    padding-top: 7px;
+    padding-right: 14px;
+    padding-left: 3px;
+}
+
+/*---------- 2.) main article ----------*/
+
+
+#main-text-wrap #article-header {
+    margin: 120px 0px 30px 0px;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+#main-text-wrap #article-header #section {
+    font-family: neutra_text_demi;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#main-text-wrap #article-header #big-title {
+    font-family: minion_reg;
+    margin: 20px 0px;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+#main-text-wrap #article-header #article-meta-footer .byline-dateline {
+    font-size: 16px;
+}
+
+#main-text-wrap #article-header #article-meta-footer .byline-dateline span:first-child {
+    font-family: neutra_text_bold;
+    margin-right: 10px;
+}
+
+#main-text-wrap #article-header #article-meta-footer .byline-dateline span:last-child {
+    font-family: neutra_text_demi;
+}
+
+#main-text-wrap #article-body #right-rail {
+    float: right;
+    width: 33%;
+}
+
+#main-text-wrap #article-body #right-rail figure.ad {
+    text-align: center;
+    width: 100%;
+}
+
+#main-text-wrap #article-body #right-rail figure.ad img {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+#main-text-wrap #article-body #right-rail h3 {
+    position: relative;
+    left: 18px;
+}
+
+#main-text-wrap #article-body #article-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+#main-text-wrap #article-body #article-footer .author-picture {
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+#main-text-wrap #article-body #article-footer .author-description {
+    font-size: 18px;
+    font-family: minion_italic;
+}

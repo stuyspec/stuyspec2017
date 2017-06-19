@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+{% set title = title | default('DEFAULT_TITLE') %}
+<!-- to be changed after production to "Stuyvesant Spectator" -->
+
+<html lang="en">
+
+    <head>
+
+        <title>{{ title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/article.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div id="header-wrapper">
+
+                <div class="top-bar" id="" data-nav-type="{{ navType }}">
+
+                    <div id="logo-main">
+                        <a class="logo-word" href="{{ url_for('index') }}">
+                            <h1>Spectator</h1>
+                        </a>
+                    </div>
+
+                    {%
+                    set navigation_bar = [
+                    ('/news', 'News', 'all'),
+                    ('/opinions', 'Opinions', 'all'),
+                    ('/features', 'Features', 'all'),
+                    ('/ae', 'A&E', 'all'),
+                    ('/humor', 'Humor', 'all'),
+                    ('/sports', 'Sports', 'all'),
+                    ('/photo', 'Photo', 'all'),
+                    ('/art', 'Art', 'all'),
+                    ('/paper', 'The Paper', 'all'),
+                    ('/subscribe', 'Subscribe', 'all')
+                    ]
+                    %}
+
+                    <nav class="navbar fixed-controller" id="mainNav" data-nav-type="{{ navType }}">
+
+                        <div class="navbar-header">
+                            <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target="" onclick="openSideNav()">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div id="logo">
+                                <a href="{{ url_for('index') }}">
+                                    <h1>S</h1>
+                                </a>
+                            </div>
+                            <div id="logo-centered">
+                                <a class="logo-word" href="{{ url_for('index') }}">
+                                    <h2>The Spectator</h2>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                {% for href, caption, permission in navigation_bar %}
+                                <li>
+                                    <a href="{{ href }}"
+                                       {% if caption == "Subscribe" %}
+                                       class="text-red"
+                                       {% endif %}
+                                    >{{ caption }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="list-group" id="mySideNav">
+                        <a class="list-group-item" onclick="closeSideNav()">TEMP_CLOSE</a>
+                        {% for href, caption, permission in navigation_bar %}
+                        <a href="{{ href }}"
+                           class="list-group-item list-group-item-action
+                                  {% if caption == 'Subscribe' %}
+                                  text-red
+                                  {% endif %}"
+                        >{{ caption }}</a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div>
+
+            <!-- sticky footer necessary -->
+            <footer>
+            </footer>
+
+        </div>
+
+    </body>
+</html>
