@@ -38,3 +38,4 @@ do not check it into the repo)
 | <img src="http://www.free-avatars.com/data/media/82/landscape_avatar_0019.jpg" align="left" height="100" >| Angela Tom | Developer | angelatom | atom@stuy.edu |
 | <img src="https://image.flaticon.com/icons/png/512/37/37232.png" align="left" height="100" >| Suzanna Liang | Developer | sliang4 | sliang4@stuy.edu |
 | <img src="https://avatars1.githubusercontent.com/u/27791964?v=3&u=905f8b972dc170061fbe11b2fe5e922c4f501f27&s=400" align="left" height="100" >| Qichen Deng | Developer | QichenD | qichendeng@stuy.edu |
+| <img src="https://uproxx.files.wordpress.com/2017/05/mocking-spongebob.jpg?quality=100&w=650" align="left" height="100" >| Sabrina Wen | Developer | sabrina-wen | sabrinawn253@gmail.com |
