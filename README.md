@@ -36,7 +36,7 @@ do not check it into the repo)
 | <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/16831085_649694105210308_4808979255089774176_n.jpg?oh=d5cc014852fb07a3bb7fc8eec4979339&oe=59E8BAEF" align="left" height="100" > | Joyce Liao | Developer | joyceliaoo | jliao@stuy.edu |
 | <img src="http://hw-img.datpiff.com/mbf37a1b/Nile_I_Dont_Exist_demo-front.jpg" align="left" height="100" > | Jonathan Wong | Developer | jonw27 | admin@stuy.tech
 | <img src="http://www.free-avatars.com/data/media/82/landscape_avatar_0019.jpg" align="left" height="100" >| Angela Tom | Developer | angelatom | atom@stuy.edu |
-| <img src="https://image.flaticon.com/icons/png/512/37/37232.png" align="left" height="100" >| Suzanna Liang | Developer | sliang4 | sliang4@stuy.edu |
+| <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/9/12/1/FN_Picky-Eaters-Chicken-Nuggets_s4x3.jpg.rend.hgtvcom.406.305.jpeg" align="left" height="100" >| Suzanna Liang | Developer | sliang4 | sliang4@stuy.edu |
 | <img src="https://avatars1.githubusercontent.com/u/27791964?v=3&u=905f8b972dc170061fbe11b2fe5e922c4f501f27&s=400" align="left" height="100" >| Qichen Deng | Developer | QichenD | qichendeng@stuy.edu |
 | <img src="https://uproxx.files.wordpress.com/2017/05/mocking-spongebob.jpg?quality=100&w=650" align="left" height="100" >| Sabrina Wen | Developer | sabrina-wen | sabrinawn253@gmail.com |
 | <img src="https://i.imgur.com/wfQYBT9.png" align="left" height="100" > | Kenneth Zhang | Developer | KenZ3 | kzhang8@stuy.edu |
