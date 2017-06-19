@@ -1,27 +1,5 @@
 # Stuyvesant Spectator Website 2017
 
-minion: http://fontsgeek.com/search?q=minion+pro
-## Bugs
-- navbar collapse is glitchy on tall screens
-## Standard dependency workflow
-*Do NOT check dependencies into the repo*
-- Create a virtual environment outside the repo (or inside, as long as you
-do not check it into the repo)
-- When you add a new dependency:
-  `pip freeze > requirements.txt`
-- When you want to install the new dependencies:
-  `pip install -r requirements.txt`
-- THE ONLY THING ADDED TO THE REPO SHOULD BE `requirements.txt`
-
-
-## Tips for Deployment
-
-- Do not check db files into the repo
-- Deploy early
-- Use automated deployment scripts
-  - A good way to automate deployment is through git hooks
-- Do not use spaces, hyphens or slashes in the app name
-
 ## Team
 
 | Photo |  Name  |  Role  | Github  |  Email  |
@@ -43,3 +21,22 @@ do not check it into the repo)
 | <img src="https://s-media-cache-ak0.pinimg.com/736x/9d/31/e0/9d31e0c2442c02b1dac172285ad61afc.jpg" align="left" height="100" > | Cathy Cai | CFA Developer | ccai1 | ccai1@stuy.edu |
 | <img src="http://1.bp.blogspot.com/-2cl0a37VYPY/Vova8h-D_NI/AAAAAAAAAeY/CPr_Ivr7fpU/s1600/curti.png" align="left" height="100" > | Alvin Chung | Flask Developer | achung0 | achung00@stuy.edu |  
 | <img src="https://s-media-cache-ak0.pinimg.com/736x/72/19/e8/7219e8b1b182d381c7725b2d404dacd9.jpg" align="left" height="100"> |  Claire Liu  |  CFA Developer  | cliu5  |  cliu5@stuy.edu  |
+
+## Standard dependency workflow
+*Do NOT check dependencies into the repo*
+- Create a virtual environment outside the repo (or inside, as long as you
+do not check it into the repo)
+- When you add a new dependency:
+  `pip freeze > requirements.txt`
+- When you want to install the new dependencies:
+  `pip install -r requirements.txt`
+- THE ONLY THING ADDED TO THE REPO SHOULD BE `requirements.txt`
+
+
+## Tips for Deployment
+
+- Do not check db files into the repo
+- Deploy early
+- Use automated deployment scripts
+  - A good way to automate deployment is through git hooks
+- Do not use spaces, hyphens or slashes in the app name
