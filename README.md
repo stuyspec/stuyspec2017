@@ -27,7 +27,7 @@ do not check it into the repo)
 | Photo |  Name  |  Role  | Github  |  Email  |
 |-------|--------|--------|---------|---------------|
 | <img src="http://nicholasyang.com/images/Headshot.jpg" align="left" height="100" > | Nicholas Yang | Project Consultant | NicholasLYang | nick@nicholasyang.com |
-| <img src="https://i.imgur.com/Gyat6Ts.png" align="left" height="100" > | Jason Kao | Editor | jkao1 |  jkao1@stuy.edu |
+| <img src="https://i.imgur.com/Gyat6Ts.png" align="left" height="100" > | Jason Kao | CFA Lead | jkao1 |  jkao1@stuy.edu |
 | <img src="https://ih1.redbubble.net/image.265404657.9078/flat,800x800,075,f.u1.jpg" align="left" height="100" > | George Zheng | Editor | |  gzheng3@stuy.edu  |
 | <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12308272_1173580929338001_7544449936608883692_n.jpg?oh=7c97f7287fb2e8a6836cf9fb61a70174&oe=59C9EE27" align="left" height="100" > | Henry Zheng | Developer | henryz2000 | hzheng3@stuy.edu |
 | <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12932566_743144365821892_1371702610685774858_n.jpg?oh=11c911a41fe09c2eae160004dddaf995&oe=59A078EF" align="left" height="100" > | Raunak Chowdhury | Developer | raunakchowdhury | rchowdhury5@stuy.edu |
