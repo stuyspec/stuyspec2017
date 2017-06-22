@@ -30,6 +30,19 @@ def delete_article():
     db.session.commit()
     print("Successfully deleted Article " + str(a))
 
+def delete_all_articles():
+    articles = models.Article.query.all()
+    print("Current articles: " + str(articles))
+    confirmation = str(raw_input("Delete all articles? (y/n) "))
+    if confirmation == "y":
+        for a in articles:
+            db.session.delete(a)
+    else:
+        print("Deleting aborted.")
+        sys.exit()
+    db.session.commit()
+    print("Deleted all articles.")
+
 def write_user(first, last, uname, pword, email):
     u = models.User(firstName=first,
                     lastName=last,
@@ -56,6 +69,19 @@ def delete_user():
     db.session.commit()
     print("Successfully deleted User " + str(u))
 
+def delete_all_users():
+    users = db.session.query(models.User).all()
+    print("Current articles: " + str(users))
+    confirmation = str(raw_input("Delete all users? (y/n) "))
+    if confirmation == "y":
+        for a in users:
+            db.session.delete(a)
+    else:
+        print("Deleting aborted.")
+        sys.exit()
+    db.session.commit()
+    print("Deleted all users.")
+
 if __name__ == "__main__":
     if sys.argv[1] == 'user':
         write_user( sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6] )
@@ -66,6 +92,11 @@ if __name__ == "__main__":
             delete_user()
         elif sys.argv[2] == 'article':
             delete_article()
+        elif sys.argv[2] == 'all':
+            if sys.argv[3] == 'users':
+                delete_all_users()
+            elif sys.argv[3] == 'articles':
+                delete_all_articles()
     elif sys.argv[1] == 'update':
         if sys.argv[2] == 'user':
             update_user()

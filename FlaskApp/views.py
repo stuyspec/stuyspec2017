@@ -1,5 +1,5 @@
 from flask import render_template
-from FlaskApp import app, models
+from FlaskApp import app, models, db
 from sqlalchemy import desc
 import sys
 import datetime
@@ -14,9 +14,9 @@ navbar:
 @app.route('/')
 @app.route('/index')
 def index():
-    articles = models.Article.query.all()#order_by(desc(models.Article.timestamp))
+    articles = db.session.query(models.Article).all()#order_by(desc(models.Article.timestamp))
     articleProperties = models.Article.__table__.columns
-    users = models.User.query.all()#order_by(models.User.username)
+    users = db.session.query(models.User).all()#order_by(models.User.username)
     userProperties = models.User.__table__.columns
     return render_template("index.html",
                            title="Stuyvesant Spectator",
@@ -28,7 +28,7 @@ def index():
 
 @app.route('/article/<int:article_id>')
 def article_test(article_id):
-    a = models.Article.query.get(article_id)
+    a = db.session.query(models.Article).get(article_id)
 
     if a is None:
         return render_template('404.html',
