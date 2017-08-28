@@ -1,4 +1,7 @@
-# Stuyvesant Spectator Website 2017
+# Stuyvesant Spectator Website 2017 (deprecated)
+
+## Notice
+This repository is no long being advanced nor maintained. From June 2017 to August 2017, the website was rewritten into a Rails back-end and a ReactJS front-end.
 
 ## Team
 
